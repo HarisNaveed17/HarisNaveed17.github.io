@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "name": "Machine Learning",
+      "projects": [
+        {
+          "name": "[Project Name]",
+          "icon": "projects/folder-logma-icon.webp",
+          "title": "[Project Title — brief tagline]",
+          "date": "[Year] - [Duration]",
+          "description": "[Short description of what this project does]",
+          "techStack": ["[Tech 1]", "[Tech 2]", "[Tech 3]"],
+          "githubUrl": "https://github.com/HarisNaveed17/placeholder",
+          "componentName": "Project1Content",
+          "isFocus": false,
+          "isActive": false
+        }
+      ]
+    },
+    {
+      "name": "Research",
+      "projects": [
+        {
+          "name": "[Project Name]",
+          "icon": "projects/folder-pangaia-icon.webp",
+          "title": "[Project Title — brief tagline]",
+          "date": "[Year] - [Duration]",
+          "description": "[Short description of what this project does]",
+          "techStack": ["[Tech 1]", "[Tech 2]"],
+          "githubUrl": "https://github.com/HarisNaveed17/placeholder",
+          "componentName": "Project2Content",
+          "isFocus": false,
+          "isActive": false
+        }
+      ]
+    }
+  ]
+}

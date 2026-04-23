@@ -1,0 +1,37 @@
+{
+  "education": [
+    {
+      "degree": "[DEGREE TITLE]",
+      "institution": "[Institution Name]",
+      "year": "[Year Range]",
+      "details": "[Relevant coursework or notes]"
+    },
+    {
+      "degree": "[DEGREE TITLE]",
+      "institution": "[Institution Name]",
+      "year": "[Year Range]",
+      "details": "[Relevant coursework or notes]"
+    }
+  ],
+  "workExperience": [
+    {
+      "jobTitle": "[JOB TITLE]",
+      "company": "[Company Name]",
+      "year": "[Date Range]",
+      "responsibilities": [
+        "[Key responsibility or achievement]",
+        "[Key responsibility or achievement]",
+        "[Key responsibility or achievement]"
+      ]
+    },
+    {
+      "jobTitle": "[JOB TITLE]",
+      "company": "[Company Name]",
+      "year": "[Date Range]",
+      "responsibilities": [
+        "[Key responsibility or achievement]",
+        "[Key responsibility or achievement]"
+      ]
+    }
+  ]
+}

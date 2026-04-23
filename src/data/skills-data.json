@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "name": "Machine Learning & AI",
+      "skills": ["[Framework 1]", "[Framework 2]", "[Framework 3]", "[Framework 4]"]
+    },
+    {
+      "name": "MLOps & Infrastructure",
+      "skills": ["[Tool 1]", "[Tool 2]", "[Tool 3]", "[Tool 4]"]
+    },
+    {
+      "name": "Programming Languages",
+      "skills": ["[Language 1]", "[Language 2]", "[Language 3]"]
+    },
+    {
+      "name": "Data & Databases",
+      "skills": ["[Tool 1]", "[Tool 2]", "[Tool 3]"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "skills": ["[Platform 1]", "[Platform 2]", "[Tool 3]"]
+    }
+  ]
+}

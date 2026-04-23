@@ -1,288 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Haris Naveed — Machine Learning Engineer">
-  <title>Haris Naveed</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Haris Naveed — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Machine Learning Engineer portfolio">
 
-  <!-- Navigation -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="#about" class="nav-logo">Haris</a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#musings">Musings</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Haris Naveed — Portfolio">
+    <meta property="og:description" content="Machine Learning Engineer portfolio">
+    <meta property="og:site_name" content="Haris Naveed — Portfolio">
+    <meta property="og:url" content="https://harisnaveed17.github.io">
+    <meta property="og:image" content="https://harisnaveed17.github.io/img/logo-portfolio-black.webp">
+    <meta property="og:image:alt" content="Portfolio Logo">
+    <meta property="og:locale" content="en_US">
 
-  <main>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Haris Naveed — Portfolio">
+    <meta name="twitter:description" content="Machine Learning Engineer portfolio">
+    <meta name="twitter:image" content="https://harisnaveed17.github.io/img/logo-portfolio-black.webp">
+    <meta name="twitter:image:alt" content="Portfolio Logo">
 
-    <!-- About / Hero -->
-    <section id="about" class="section section-hero">
-      <div class="container">
-        <div class="hero-content">
-          <p class="hero-greeting">Hi, I'm</p>
-          <h1 class="hero-name">Haris!</h1>
-          <p class="hero-title">Machine Learning Engineer</p>
-          <p class="hero-bio">
-            [I'm a machine learning operations engineer @ Motive. I'm also a part-time research engineer at SimPPL, where we conduct research on Trust & Safety in AI. ]
-          </p>
-          <div class="hero-links">
-            <a href="https://github.com/HarisNaveed17" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com/in/harisnaveed" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://masalafries.substack.com/?r=aitl9&utm_campaign=pub-share-checklist" class="btn btn-secondary" target="_blank" rel="noopener">Substack</a>
-            <a href="[YOUR_RESUME_URL]" class="btn btn-outline" target="_blank" rel="noopener">Resume</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="edu-grid">
-
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <h3>New York University</h3>
-                <p class="card-subtitle">M.S Data Science</p>
-              </div>
-              <span class="badge">[2023–2025]</span>
-            </div>
-            <ul class="card-list">
-              <li>Relevant coursework: [Probabilistic Time Series Analysis, Responsible Data Science, Causal Inference]</li>
-              <li>Fulbright Scholar</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <div>
-                <h3>National University of Sciences and Technology (NUST)</h3>
-                <p class="card-subtitle">B.S Electrical Engineering</p>
-              </div>
-              <span class="badge">2017–2021</span>
-            </div>
-            <ul class="card-list">
-              <li><a href="https://ieeexplore.ieee.org/document/9781420" target="_blank" rel="noopener">Assessing Deep Generative Models on Time-Series Network Data</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <h3>Software Engineer - MLOps</h3>
-                  <p class="card-subtitle">Motive</p>
-                </div>
-                <span class="badge">July 2025 – Present</span>
-              </div>
-              <ul class="card-list">
-                <li>Implemented a LangGraph - based agentic workflow to automate preliminary and 
-                  post-release administrative tasks around a core service deployment. 
-                  This workflow helped reduce the time to deployment by 70% </li>
-                <li>Wrote and deployed the backend of a new service that used Vision Language Models
-                  to identify trash pickups, types of trash bags and hazardous material in videos </li>
-                <!-- <li>[Key accomplishment or responsibility.]</li> -->
-              </ul>
-              <div class="tag-row">
-                <span class="tag">[Python]</span>
-                <span class="tag">[Kubernetes]</span>
-                <span class="tag">[LangGraph]</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="card">
-              <div class="card-header">
-                <div>
-                  <h3>Machine Learning Engineer (part-time)</h3>
-                  <p class="card-subtitle">SimPPL</p>
-                </div>
-                <span class="badge">Oct 2024 – Present</span>
-              </div>
-              <ul class="card-list">
-                <li>Built a RAG-based search system with GraphRAG and multi-query retrieval that achieved 60% win-rate on factual, complex, and vague questions.</li>
-                <li>Designed and implemented the data pipeline for embeddings generation and vector database storage, architected for scalability.</li>
-              </ul>
-              <div class="tag-row">
-                <span class="tag">Langchain</span>
-                <span class="tag">Google Cloud</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-
-          <div class="project-card">
-            <div class="project-card-body">
-              <h3>Retrieval Augmented Generation for Financial Question-Answering</h3>
-              <p>Explored RAG techniques to improve LLM accuracy on financial documents, expanding the FinanceBench baseline from 37% accuracy using semantic chunking and contextual retrieval strategies. Achieved 54% accuracy with Naive RAG + semantic chunking, a 17% improvement over the baseline.</p>
-              <div class="tag-row">
-                <span class="tag">Python</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">ChromaDB</span>
-              </div>
-            </div>
-            <div class="project-card-footer">
-              <a href="[GITHUB_URL]" class="link" target="_blank" rel="noopener">GitHub →</a>
-              <a href="[DEMO_URL]" class="link" target="_blank" rel="noopener">Demo →</a>
-            </div>
-          </div>
-
-          <!-- <div class="project-card">
-            <div class="project-card-body">
-              <h3>[PROJECT NAME]</h3>
-              <p>[Description of the project and its outcomes.]</p>
-              <div class="tag-row">
-                <span class="tag">[Tech 1]</span>
-                <span class="tag">[Tech 2]</span>
-              </div>
-            </div>
-            <div class="project-card-footer">
-              <a href="[GITHUB_URL]" class="link" target="_blank" rel="noopener">GitHub →</a>
-              <a href="[PAPER_URL]" class="link" target="_blank" rel="noopener">Paper →</a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-card-body">
-              <h3>[PROJECT NAME]</h3>
-              <p>[Description of the project and its outcomes.]</p>
-              <div class="tag-row">
-                <span class="tag">[Tech 1]</span>
-                <span class="tag">[Tech 2]</span>
-              </div>
-            </div>
-            <div class="project-card-footer">
-              <a href="[GITHUB_URL]" class="link" target="_blank" rel="noopener">GitHub →</a>
-            </div>
-          </div> -->
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Musings -->
-    <section id="musings" class="section">
-      <div class="container">
-        <h2 class="section-title">Musings</h2>
-        <div class="musings-card">
-          <div class="musings-content">
-            <div class="musings-icon" aria-hidden="true">&#9998;</div>
-            <div>
-              <h3>Writing on Substack</h3>
-              <p>A 27 year old in Islamabad trying to create half as much as he consumes.
-                 I write about trust & safety in AI,
-                the enshittification of social media and quirky things in pakistani culture..</p>
-              <a href="https://masalafries.substack.com/" class="btn btn-primary" target="_blank" rel="noopener">
-                Read on Substack &rarr;
-              </a>
-            </div>
-          </div>
-          <div class="musings-posts">
-            <a href="[POST_1_URL]" class="post-preview" target="_blank" rel="noopener">
-              <span class="post-date">[Month Year]</span>
-              <span class="post-title">[Post Title]</span>
-            </a>
-            <a href="[POST_2_URL]" class="post-preview" target="_blank" rel="noopener">
-              <span class="post-date">[Month Year]</span>
-              <span class="post-title">[Post Title]</span>
-            </a>
-            <a href="[POST_3_URL]" class="post-preview" target="_blank" rel="noopener">
-              <span class="post-date">[Month Year]</span>
-              <span class="post-title">[Post Title]</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="section-sub">Have a question, an opportunity, or just want to say hello?
-          I'd love to hear from you!</p>
-        <div data-fs-success style="display:none; color: #059669; font-size: 0.9rem; margin-bottom: 16px;">
-          Message sent! I'll get back to you soon.
-        </div>
-        <div data-fs-error style="display:none; color: #dc2626; font-size: 0.9rem; margin-bottom: 16px;"></div>
-
-        <form class="contact-form" id="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required data-fs-field>
-              <span data-fs-error="name" style="display:none; color: #dc2626; font-size: 0.8rem; margin-top: 4px; display: block;"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required data-fs-field>
-              <span data-fs-error="email" style="display:none; color: #dc2626; font-size: 0.8rem; margin-top: 4px; display: block;"></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="What's on your mind?" required data-fs-field></textarea>
-            <span data-fs-error="message" style="display:none; color: #dc2626; font-size: 0.8rem; margin-top: 4px; display: block;"></span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit" data-fs-submit-btn>Send Message</button>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Haris N &middot; Built with HTML &amp; CSS &middot; Hosted on GitHub Pages</p>
-    </div>
-  </footer>
-
-  <script>
-    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-    formspree('initForm', { formElement: '#contact-form', formId: 'xdaywbln' });
-  </script>
-  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-  <script src="script.js"></script>
-</body>
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body class="cursor-default">
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
 </html>

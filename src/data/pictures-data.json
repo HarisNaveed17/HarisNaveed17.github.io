@@ -1,0 +1,22 @@
+{
+  "pictures": [
+    {
+      "id": 1,
+      "title": "[Photo Title]",
+      "location": "[Location]",
+      "description": "[Photo description]",
+      "date": "[Date]",
+      "src": "/img/photos/placeholder-1.webp",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 2,
+      "title": "[Photo Title]",
+      "location": "[Location]",
+      "description": "[Photo description]",
+      "date": "[Date]",
+      "src": "/img/photos/placeholder-2.webp",
+      "alt": "[Photo alt text]"
+    }
+  ]
+}

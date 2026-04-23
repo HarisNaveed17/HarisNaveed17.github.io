@@ -1,0 +1,26 @@
+[
+  {
+    "id": "playlist1",
+    "name": "[Playlist Name 1]",
+    "description": "[Playlist description]",
+    "spotifyUrl": "https://open.spotify.com/playlist/placeholder1",
+    "coverUrl": "/img/icons/music/logo_spotify.svg",
+    "trackCount": 0
+  },
+  {
+    "id": "playlist2",
+    "name": "[Playlist Name 2]",
+    "description": "[Playlist description]",
+    "spotifyUrl": "https://open.spotify.com/playlist/placeholder2",
+    "coverUrl": "/img/icons/music/logo_spotify.svg",
+    "trackCount": 0
+  },
+  {
+    "id": "playlist3",
+    "name": "[Playlist Name 3]",
+    "description": "[Playlist description]",
+    "spotifyUrl": "https://open.spotify.com/playlist/placeholder3",
+    "coverUrl": "/img/icons/music/logo_spotify.svg",
+    "trackCount": 0
+  }
+]
