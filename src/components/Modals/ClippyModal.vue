@@ -9,9 +9,19 @@ const isDismissed = ref(false)
 const DELAY_MS = 20000 // 20 seconds delay
 const STORAGE_KEY = 'clippyDismissed'
 
+const GREETINGS = [
+	'Greetings Hooman!',
+	'Hello ji',
+	'Howdy',
+	"I hope you're having a great day!"
+]
+
+const greeting = ref('')
+
 let timeoutId = null
 
 onMounted(() => {
+	greeting.value = GREETINGS[Math.floor(Math.random() * GREETINGS.length)]
 	// Check if user has already dismissed the modal
 	const dismissed = localStorage.getItem(STORAGE_KEY)
 	if (dismissed) {
@@ -59,7 +69,7 @@ const dismissForever = () => {
 
 					<!-- Content -->
 					<div class="pr-3">
-						<p class="text-sm font-bold text-black mb-2">Hey there, beautiful</p>
+						<p class="text-sm font-bold text-black mb-2">{{ greeting }}</p>
 
 						<!-- Don't show again -->
 						<button class="text-xxs text-gray-500 hover:text-gray-700 mt-3 underline cursor-pointer"
