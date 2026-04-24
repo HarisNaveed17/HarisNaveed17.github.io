@@ -44,9 +44,8 @@ if (typeof window !== 'undefined') {
   isMobile.value = /Mobi|Android/i.test(navigator.userAgent)
 }
 
-// Computed property to get the localized title
 const getLocalizedTitle = (entity) => {
-  return entity.title['en'] || entity.title['fr']
+  return entity.title
 }
 
 // If click occurs somewhere else, remove the active state

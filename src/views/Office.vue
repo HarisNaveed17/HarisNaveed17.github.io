@@ -128,6 +128,12 @@ const openWindow = (windowId) => {
   if (!existingWindow) {
     const entity = entities.value.find((entity) => entity.id === windowId)
     if (entity) {
+      let posX = entity.initPositionX
+      let posY = entity.initPositionY
+      if (windows.value.length === 0) {
+        posX = Math.max(0, Math.round((window.innerWidth - entity.initWidth) / 2))
+        posY = Math.max(0, Math.round((window.innerHeight - 32 - entity.initHeight) / 2))
+      }
       highestZIndex.value++ // Increase highestZIndex
       windows.value.push({
         id: windowId,
@@ -136,8 +142,8 @@ const openWindow = (windowId) => {
         iconSrc: entity.iconSrc,
         title: entity.title,
         zIndex: highestZIndex.value, // Use highestZIndex
-        initPositionX: entity.initPositionX,
-        initPositionY: entity.initPositionY,
+        initPositionX: posX,
+        initPositionY: posY,
         initWidth: entity.initWidth,
         initHeight: entity.initHeight,
         minWidth: entity.minWidth,

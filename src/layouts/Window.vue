@@ -22,14 +22,15 @@
         <WindowClose @click="closeWindow" />
       </div>
     </div>
-    <div class="absolute w-full h-full overflow-hidden p-0.75">
+    <div class="absolute top-7 bottom-0 w-full overflow-hidden p-0.75 flex flex-col">
       <WindowHeaderDropdown :dropdownItems="translatedMenuHeaderItems" :windowsHeaderLogo="windowsHeaderLogo" />
       <div v-if="headerToolsId">
         <WindowHeaderTools :id="id" :headerToolsId="headerToolsId" />
         <WindowHeaderSearch :id="id" :title="translatedTitle" :iconSrc="iconSrc" :isSearchVisible="isSearchVisible" />
       </div>
-      <!-- Component containing content for the window goes here it is done in Office.vue component -->
-      <slot></slot>
+      <div class="flex-1 min-h-0 overflow-hidden">
+        <slot></slot>
+      </div>
     </div>
     <div v-if="resizable">
       <!-- Resize handlers -->
@@ -56,8 +57,7 @@
 </template>
 
 <script setup>
-import { ref, computed, inject, watch } from 'vue'
-import { useLocaleStore } from '@/stores/localeStore'
+import { ref, computed, inject } from 'vue'
 import WindowMinimize from '../components/Buttons/WindowMinimize.vue'
 import WindowMaximize from '../components/Buttons/WindowMaximize.vue'
 import WindowClose from '../components/Buttons/WindowClose.vue'
@@ -85,7 +85,7 @@ const {
   isSearchVisible
 } = defineProps({
   id: String,
-  title: Object,
+  title: String,
   iconSrc: String,
   initPositionX: Number,
   initPositionY: Number,
@@ -100,22 +100,8 @@ const {
   isSearchVisible: Boolean
 })
 
-// Locale management
-const localeStore = useLocaleStore()
-
-const translatedTitle = ref(title[localeStore.currentLocale] || title['fr'])
-const translatedMenuHeaderItems = ref(
-  menuHeaderData.menuHeaderItems[menuHeaderItemsId][localeStore.currentLocale] || menuHeaderData.menuHeaderItems[menuHeaderItemsId]['fr']
-)
-
-watch(
-  () => localeStore.currentLocale,
-  (newLocale) => {
-    translatedTitle.value = title[newLocale] || title['fr']
-    const items = menuHeaderData.menuHeaderItems[menuHeaderItemsId]
-    translatedMenuHeaderItems.value = items ? items[newLocale] || items['fr'] : []
-  }
-)
+const translatedTitle = title
+const translatedMenuHeaderItems = menuHeaderData.menuHeaderItems[menuHeaderItemsId] ?? []
 
 // App size constants
 const appHeight = window.innerHeight - 32
