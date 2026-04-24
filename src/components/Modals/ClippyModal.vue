@@ -22,8 +22,8 @@ let timeoutId = null
 
 onMounted(() => {
 	greeting.value = GREETINGS[Math.floor(Math.random() * GREETINGS.length)]
-	// Check if user has already dismissed the modal
-	const dismissed = localStorage.getItem(STORAGE_KEY)
+	// Check if user has already dismissed the modal this session
+	const dismissed = sessionStorage.getItem(STORAGE_KEY)
 	if (dismissed) {
 		isDismissed.value = true
 		return
@@ -46,7 +46,7 @@ const closeModal = () => {
 }
 
 const dismissForever = () => {
-	localStorage.setItem(STORAGE_KEY, 'true')
+	sessionStorage.setItem(STORAGE_KEY, 'true')
 	isDismissed.value = true
 	isVisible.value = false
 }
