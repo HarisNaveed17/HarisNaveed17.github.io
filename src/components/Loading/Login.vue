@@ -5,8 +5,25 @@
     </template>
 
     <template #center>
-      <div class="flex w-full flex-col items-center gap-6">
-        <img src="/img/winlogo.png" alt="Windows XP" class="w-16 h-16" />
+      <div class="flex w-full">
+        <div class="md:flex hidden justify-end items-center w-1/2">
+          <div>
+            <div class="flex justify-end w-full">
+              <div class="w-2/3">
+                <img src="/img/logo-portfolio-white.webp" :alt="$t('alt.logoLogin')" class="mb-3" />
+              </div>
+            </div>
+            <div class="w-full flex justify-end">
+              <div class="w-10/12 mr-12">
+                <h2 class="text-white text-lg text-right">
+                  {{ $t('message.toBegin') }}
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-px h-96 line-loading-gradient mx-3 md:flex hidden"></div>
         <LoginForm />
       </div>
     </template>
@@ -17,7 +34,7 @@
           <div class="flex text-white md:text-sm text-xs font-bold">
             <h4>{{ $t('message.explainer') }}</h4>
           </div>
-          <p class="text-white text-xs opacity-60 font-franklin">
+          <p class="text-white text-s opacity-60 font-franklin">
             Best experienced on desktop
           </p>
         </div>
