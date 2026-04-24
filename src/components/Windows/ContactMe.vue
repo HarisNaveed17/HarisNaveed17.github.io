@@ -11,7 +11,7 @@ const emailSent = ref(false)
 const isLoading = ref(false)
 const isFormComplete = ref(false)
 
-const FORMSPREE_ID = '[YOUR_FORMSPREE_ID]'
+const FORMSPREE_ID = 'xdaywbln'
 
 const sendEmail = async () => {
   if (!userEmail.value || !userMessage.value || !emailSubject.value) {
@@ -149,8 +149,8 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
         </div>
         <input
           type="text"
-          class="w-full h-5 border border-input-blue p-1.5 text-xs outline-none placeholder:text-black"
-          placeholder="[your-email@example.com]"
+          class="w-full h-5 border border-input-blue p-1.5 text-xs outline-none"
+          value="haris.naveed174@gmail.com"
           readonly="readonly"
         />
       </label>
