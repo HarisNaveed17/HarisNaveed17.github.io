@@ -5,8 +5,8 @@
       :class="activeWindow === entity.id ? 'bg-pellet-blue-active shadow-pellet-footer-active' : 'bg-pellet-blue-deactivated shadow-pellet-footer-deactivated'"
     >
       <div class="flex gap-1 mt-px">
-        <img :src="entity.iconSrc" :alt="$t('common.icon') + ' ' + getLocalizedTitle(entity)" class="w-4 h-4" />
-        <p class="small-p text-white truncate hidden sm:block">{{ getLocalizedTitle(entity) }}</p>
+        <img :src="entity.iconSrc" :alt="$t('common.icon') + ' ' + entity.title" class="w-4 h-4" />
+        <p class="small-p text-white truncate hidden sm:block">{{ entity.title }}</p>
       </div>
     </div>
   </div>
@@ -14,7 +14,6 @@
 
 <script setup>
 import { inject } from 'vue'
-import { useLocaleStore } from '@/stores/localeStore'
 
 // Define props
 const props = defineProps({
@@ -27,14 +26,9 @@ const props = defineProps({
 const emit = defineEmits(['toggle-window'])
 
 const { entity } = props
-const localeStore = useLocaleStore()
 const activeWindow = inject('activeWindow')
 
 const toggleWindow = () => {
   emit('toggle-window', entity.id)
-}
-
-const getLocalizedTitle = (entity) => {
-  return entity.title[localeStore.currentLocale] || entity.title['fr']
 }
 </script>

@@ -1,14 +1,8 @@
 [
   {
     "id": "about",
-    "title": {
-      "en": "About Me",
-      "fr": "À propos"
-    },
-    "subtitle": {
-      "en": "Who am I?",
-      "fr": "Qui suis-je?"
-    },
+    "title": "About Me",
+    "subtitle": "Who am I?",
     "imgSrc": "/img/icons/documents/folder-docs-icon-sm.webp",
     "onDesktop": true,
     "resizable": true,
@@ -29,14 +23,8 @@
   },
   {
     "id": "myProjects",
-    "title": {
-      "en": "My Projects",
-      "fr": "Mes projets"
-    },
-    "subtitle": {
-      "en": "See all my projects",
-      "fr": "Voir tous mes projets"
-    },
+    "title": "My Projects",
+    "subtitle": "See all my projects",
     "imgSrc": "/img/icons/projects/projects-icon-lg.webp",
     "onDesktop": true,
     "resizable": true,
@@ -57,14 +45,8 @@
   },
   {
     "id": "contact",
-    "title": {
-      "en": "Contact me",
-      "fr": "Me contacter"
-    },
-    "subtitle": {
-      "en": "Leave me a message",
-      "fr": "Laissez moi un message"
-    },
+    "title": "Get in Touch",
+    "subtitle": "Leave me a message",
     "imgSrc": "/img/icons/contact/email-icon-lg.webp",
     "onDesktop": true,
     "resizable": true,
@@ -85,16 +67,10 @@
   },
   {
     "id": "myCV",
-    "title": {
-      "en": "My CV",
-      "fr": "Mon CV"
-    },
-    "subtitle": {
-      "en": "See the curriculum vitae",
-      "fr": "Voir le curriculum vitae"
-    },
+    "title": "My CV",
+    "subtitle": "See the curriculum vitae",
     "imgSrc": "/img/icons/cv/cv-icon-lg.webp",
-    "onDesktop": true,
+    "onDesktop": false,
     "resizable": true,
     "windowsHeaderLogo": true,
     "isSearchVisible": true,
@@ -113,10 +89,7 @@
   },
   {
     "id": "music",
-    "title": {
-      "en": "My Musics",
-      "fr": "Mes Musiques"
-    },
+    "title": "My Playlists",
     "imgSrc": "/img/icons/music/playmusic-icon-lg.webp",
     "onDesktop": true,
     "resizable": true,
@@ -137,10 +110,7 @@
   },
   {
     "id": "documents",
-    "title": {
-      "en": "My Documents",
-      "fr": "Mes documents"
-    },
+    "title": "My Documents",
     "imgSrc": "/img/icons/documents/folder-docs-icon-sm.webp",
     "onDesktop": false,
     "resizable": true,
@@ -161,10 +131,7 @@
   },
   {
     "id": "pictures",
-    "title": {
-      "en": "My Pictures",
-      "fr": "Mes Images"
-    },
+    "title": "My Pictures",
     "imgSrc": "/img/icons/pictures/folder-images-icon-sm.webp",
     "onDesktop": false,
     "resizable": true,
@@ -185,10 +152,7 @@
   },
   {
     "id": "minesweeper",
-    "title": {
-      "en": "Minesweeper",
-      "fr": "Démineur"
-    },
+    "title": "Minesweeper",
     "imgSrc": "/img/icons/minesweeper/minesweeper-icon-lg.webp",
     "onDesktop": true,
     "resizable": false,
@@ -209,8 +173,8 @@
   },
   {
     "id": "skills",
-    "title": {"en": "My Skills", "fr": "Mes Compétences"},
-    "subtitle": {"en": "My tech stack & expertise", "fr": "Ma stack technique"},
+    "title": "My Skills",
+    "subtitle": "My tech stack & expertise",
     "imgSrc": "/img/icons/services-icon-lg.webp",
     "onDesktop": true,
     "resizable": true,
@@ -231,8 +195,8 @@
   },
   {
     "id": "substack",
-    "title": {"en": "My Writing", "fr": "Mes articles"},
-    "subtitle": {"en": "Read my Substack", "fr": "Lire mon Substack"},
+    "title": "My Writing",
+    "subtitle": "Read my Substack",
     "imgSrc": "/img/icons/substack/substack-icon-lg.webp",
     "onDesktop": true,
     "isExternalLink": true,

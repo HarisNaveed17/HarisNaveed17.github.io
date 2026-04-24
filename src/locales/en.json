@@ -34,15 +34,12 @@
     "textDocument": "Text Document",
     "list": "List",
     "modifications": "Modifications",
-    "loading": "Loading...",
-    "language": "Language",
-    "french": "French",
-    "english": "English"
+    "loading": "Loading..."
   },
   "message": {
     "welcome": "Welcome to my computer.",
-    "toBegin": "To begin the journey, click on my username.",
-    "explainer": "After logging in, you can browse through the folders on my computer. Go to the desktop and click on the projects folder to see all my projects."
+    "toBegin": "To enter the website, click on my name",
+    "explainer": "First time? Go to the About section. Second time? Check out my playlists :^)"
   },
 
   "header": {
@@ -270,8 +267,7 @@
   "alt": {
     "logoStart": "Logo portfolio XP black start",
     "logoLoading": "Logo portfolio XP black loading",
-    "logoLogin": "Logo portfolio XP white login",
-    "currLang": "Current language"
+    "logoLogin": "Logo portfolio XP white login"
   },
   "clippy": {
     "greeting": "Hi there! 👋",

@@ -63,30 +63,11 @@ const selectedComponent = computed(() => {
   return null
 })
 
-const getLocalizedCategoryName = (category) => {
-  if (typeof category.name === 'object') {
-    return category.name['en'] || category.name['fr']
-  }
-  return category.name
-}
+const getLocalizedCategoryName = (category) => category.name
 
-const localizedTitle = computed(() => {
-  const project = goBackStore.currentActiveProject
-  if (!project) return ''
-  if (typeof project.title === 'object') {
-    return project.title['en'] || project.title['fr']
-  }
-  return project.title || ''
-})
+const localizedTitle = computed(() => goBackStore.currentActiveProject?.title || '')
 
-const localizedDate = computed(() => {
-  const project = goBackStore.currentActiveProject
-  if (!project) return ''
-  if (typeof project.date === 'object') {
-    return project.date['en'] || project.date['fr']
-  }
-  return project.date || ''
-})
+const localizedDate = computed(() => goBackStore.currentActiveProject?.date || '')
 
 watch(
   () => goBackStore.currentActiveProject,

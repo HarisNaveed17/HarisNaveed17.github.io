@@ -3,83 +3,56 @@
     "default": [
       {
         "id": 1,
-        "title": {
-          "en": "System Tasks",
-          "fr": "Tâches système"
-        },
+        "title": "System Tasks",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "View system information",
-              "fr": "Informations système"
-            },
+            "subtitle": "View system information",
             "iconUrl": "/img/icons/side-menu/info-system-icon.webp"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "Add or remove programs",
-              "fr": "Gestion des programmes"
-            },
+            "subtitle": "Add or remove programs",
             "iconUrl": "/img/icons/side-menu/programs-icon.webp"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "Change a settings",
-              "fr": "Changer les paramètres"
-            },
+            "subtitle": "Change a settings",
             "iconUrl": "/img/icons/side-menu/settings-icon.webp"
           }
         ]
       },
       {
         "id": 2,
-        "title": {
-          "en": "Other",
-          "fr": "Autres"
-        },
+        "title": "Other",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "My network places",
-              "fr": "Mes emplacements réseau"
-            },
+            "subtitle": "My network places",
             "iconUrl": "/img/icons/side-menu/networking-icon.webp",
             "url": ""
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "My documents",
-              "fr": "Mes documents"
-            },
+            "subtitle": "My documents",
             "iconUrl": "/img/icons/side-menu/documents-icon.webp",
             "url": ""
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "Shared documents",
-              "fr": "Documents partagés"
-            },
+            "subtitle": "Shared documents",
             "iconUrl": "/img/icons/side-menu/shared-documents-icon.webp",
             "url": ""
           },
           {
             "id": 4,
-            "subtitle": {
-              "en": "Control panel",
-              "fr": "Panneau de configuration"
-            },
+            "subtitle": "Control panel",
             "iconUrl": "/img/icons/side-menu/settings-icon.webp",
             "url": ""
           }
@@ -87,38 +60,26 @@
       },
       {
         "id": 3,
-        "title": {
-          "en": "Details",
-          "fr": "Détails"
-        },
+        "title": "Details",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "My Github",
-              "fr": "Mon Github"
-            },
+            "subtitle": "My Github",
             "iconUrl": "/img/icons/side-menu/github-icon.webp",
             "url": "https://github.com/HarisNaveed17"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "My LinkedIn",
-              "fr": "Mon LinkedIn"
-            },
+            "subtitle": "My LinkedIn",
             "iconUrl": "/img/icons/side-menu/linkedin-icon.webp",
             "url": "https://www.linkedin.com/in/[YOUR_LINKEDIN]/"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "My Substack",
-              "fr": "Mon Substack"
-            },
+            "subtitle": "My Substack",
             "iconUrl": "/img/icons/substack/substack-icon-sm.webp",
             "url": "https://masalafries.substack.com"
           }
@@ -128,10 +89,7 @@
     "pictures": [
       {
         "id": 1,
-        "title": {
-          "en": "Pictures Tasks",
-          "fr": "Tâches photo"
-        },
+        "title": "Pictures Tasks",
         "iconHeader": "/img/icons/side-menu/image.webp",
         "bgImage": "/img/icons/pictures/bg-picture-menu.webp",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window-active.webp",
@@ -140,124 +98,82 @@
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "View as a slide show",
-              "fr": "Voir en diaporama"
-            },
+            "subtitle": "View as a slide show",
             "iconUrl": "/img/icons/side-menu/screen-icon.webp"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "Order prints online",
-              "fr": "Commander des tirages"
-            },
+            "subtitle": "Order prints online",
             "iconUrl": "/img/icons/side-menu/picture-online-icon.webp"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "Print pictures",
-              "fr": "Imprimer des images"
-            },
+            "subtitle": "Print pictures",
             "iconUrl": "/img/icons/side-menu/print-picture-icon.webp"
           },
           {
             "id": 4,
-            "subtitle": {
-              "en": "Shop for pictures online",
-              "fr": "Acheter des images en ligne"
-            },
+            "subtitle": "Shop for pictures online",
             "iconUrl": "/img/icons/side-menu/picture-online-icon.webp"
           }
         ]
       },
       {
         "id": 2,
-        "title": {
-          "en": "File and folder tasks",
-          "fr": "Fichier et dossier"
-        },
+        "title": "File and folder tasks",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "Make a new folder",
-              "fr": "Créer un nouveau dossier"
-            },
+            "subtitle": "Make a new folder",
             "iconUrl": "/img/icons/side-menu/new-folder-icon.webp"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "Publish this folder to the web",
-              "fr": "Publier ce dossier sur le web"
-            },
+            "subtitle": "Publish this folder to the web",
             "iconUrl": "/img/icons/side-menu/publish-web-icon.webp"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "Share this folder",
-              "fr": "Partager ce dossier"
-            },
+            "subtitle": "Share this folder",
             "iconUrl": "/img/icons/side-menu/share-folder-icon.webp"
           }
         ]
       },
       {
         "id": 3,
-        "title": {
-          "en": "Other places",
-          "fr": "Autres localisations"
-        },
+        "title": "Other places",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "Shared pictures",
-              "fr": "Photos partagées"
-            },
+            "subtitle": "Shared pictures",
             "iconUrl": "/img/icons/side-menu/folder-image-icon.webp"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "My pictures",
-              "fr": "Mes photos"
-            },
+            "subtitle": "My pictures",
             "iconUrl": "/img/icons/side-menu/folder-image-icon.webp"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "My computer",
-              "fr": "Mon ordinateur"
-            },
+            "subtitle": "My computer",
             "iconUrl": "/img/icons/side-menu/computer-icon.webp"
           },
           {
             "id": 4,
-            "subtitle": {
-              "en": "My network places",
-              "fr": "Mes emplacements réseau"
-            },
+            "subtitle": "My network places",
             "iconUrl": "/img/icons/side-menu/networking-icon.webp"
           }
         ]
       },
       {
         "id": 4,
-        "title": {
-          "en": "Details",
-          "fr": "Détails"
-        },
+        "title": "Details",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
@@ -267,90 +183,60 @@
     "documents": [
       {
         "id": 1,
-        "title": {
-          "en": "File and folder tasks",
-          "fr": "Fichier et dossier"
-        },
+        "title": "File and folder tasks",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "Make a new folder",
-              "fr": "Créer un nouveau dossier"
-            },
+            "subtitle": "Make a new folder",
             "iconUrl": "/img/icons/side-menu/new-folder-icon.webp"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "Publish this folder to the web",
-              "fr": "Publier ce dossier sur le web"
-            },
+            "subtitle": "Publish this folder to the web",
             "iconUrl": "/img/icons/side-menu/publish-web-icon.webp"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "Share this folder",
-              "fr": "Partager ce dossier"
-            },
+            "subtitle": "Share this folder",
             "iconUrl": "/img/icons/side-menu/share-folder-icon.webp"
           }
         ]
       },
       {
         "id": 2,
-        "title": {
-          "en": "Other places",
-          "fr": "Autres localisations"
-        },
+        "title": "Other places",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,
         "subtasks": [
           {
             "id": 1,
-            "subtitle": {
-              "en": "Desktop",
-              "fr": "Bureau"
-            },
+            "subtitle": "Desktop",
             "iconUrl": "/img/icons/side-menu/board-icon.webp"
           },
           {
             "id": 2,
-            "subtitle": {
-              "en": "Shared documents",
-              "fr": "Dossiers partagés"
-            },
+            "subtitle": "Shared documents",
             "iconUrl": "/img/icons/side-menu/shared-documents-icon.webp"
           },
           {
             "id": 3,
-            "subtitle": {
-              "en": "My computer",
-              "fr": "Mon ordinateur"
-            },
+            "subtitle": "My computer",
             "iconUrl": "/img/icons/side-menu/computer-icon.webp"
           },
           {
             "id": 4,
-            "subtitle": {
-              "en": "My network places",
-              "fr": "Mes emplacements réseau"
-            },
+            "subtitle": "My network places",
             "iconUrl": "/img/icons/side-menu/networking-icon.webp"
           }
         ]
       },
       {
         "id": 3,
-        "title": {
-          "en": "Details",
-          "fr": "Détails"
-        },
+        "title": "Details",
         "bgColor": "bg-window-menu-card",
         "iconSrc": "/img/icons/side-menu/top-icon-card-window.webp",
         "headerActive": false,

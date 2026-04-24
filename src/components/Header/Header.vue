@@ -94,11 +94,11 @@ const shutdown = () => {
 }
 
 const getLocalizedTitle = (entity) => {
-  return entity.title['en'] || entity.title['fr']
+  return entity.title
 }
 
 const getLocalizedSubtitle = (entity) => {
-  return entity.subtitle?.['en'] || entity.subtitle?.['fr'] || ''
+  return entity.subtitle || ''
 }
 </script>
 
