@@ -37,7 +37,7 @@
            class="text-xs border border-gray-400 px-2 py-1 hover:bg-gray-100 rounded">
           GitHub
         </a>
-        <a href="https://linkedin.com/in/[YOUR_LINKEDIN]" target="_blank"
+        <a href="https://linkedin.com/in/harisnaveed" target="_blank"
            class="text-xs border border-gray-400 px-2 py-1 hover:bg-gray-100 rounded">
           LinkedIn
         </a>
@@ -45,7 +45,7 @@
            class="text-xs border border-gray-400 px-2 py-1 hover:bg-gray-100 rounded">
           Substack
         </a>
-        <a href="/pdf/resume.pdf" target="_blank"
+        <a href="/pdf/Naveed_Haris_resume.pdf" target="_blank"
            class="text-xs border border-gray-400 px-2 py-1 hover:bg-gray-100 rounded">
           Resume (PDF)
         </a>
