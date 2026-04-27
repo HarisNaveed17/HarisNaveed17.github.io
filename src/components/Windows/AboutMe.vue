@@ -3,30 +3,32 @@
     <div class="flex items-center gap-4 mb-4 pb-3 border-b border-gray-200">
       <img src="/img/icons/documents/folder-docs-icon-sm.webp" alt="About Me" class="w-10 h-10" />
       <div>
-        <h1 class="text-base font-bold">[YOUR NAME]</h1>
-        <p class="text-xs text-gray-500">[YOUR TITLE — e.g. Machine Learning Engineer]</p>
+        <h1 class="text-base font-bold">Haris Naveed</h1>
+        <p class="text-xs text-gray-500">MLOps Engineer</p>
       </div>
     </div>
 
     <section class="mb-4">
       <h2 class="text-sm font-bold underline mb-2">About</h2>
       <p class="text-xs leading-relaxed">
-        [Write a short bio here — who you are, what you do, what you're interested in. 2–3 sentences.]
+        I'm a 27 year old Machine Learning Engineer based in Islamabad. I have an MS in Data Science from NYU as a Fulbright Scholar. 
+        I'm interested in scalable, fault tolerant ML-systems, technical AI safety and algorithmic harm. 
       </p>
     </section>
 
     <section class="mb-4">
       <h2 class="text-sm font-bold underline mb-2">Currently</h2>
       <ul class="text-xs leading-relaxed list-disc list-inside space-y-1">
-        <li>[Current role or project]</li>
-        <li>[Another current thing — research, side project, etc.]</li>
+        <li>Software Engineer - MLOps @ Motive</li>
+        <li>Machine learning Engineer @ Simppl</li>
       </ul>
     </section>
 
     <section class="mb-4">
       <h2 class="text-sm font-bold underline mb-2">Interests</h2>
       <p class="text-xs leading-relaxed">
-        [What do you care about outside of work? Keep it personal.]
+        Outside of work, I'm interested in urban design, cultural evolution (especially in Pakistan) and travelling (you can
+        find some pictures from my travels on this website too!)
       </p>
     </section>
 
