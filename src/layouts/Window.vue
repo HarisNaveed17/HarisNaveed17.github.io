@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { ref, computed, inject } from 'vue'
+import { ref, computed, inject, provide } from 'vue'
 import WindowMinimize from '../components/Buttons/WindowMinimize.vue'
 import WindowMaximize from '../components/Buttons/WindowMaximize.vue'
 import WindowClose from '../components/Buttons/WindowClose.vue'
@@ -82,7 +82,8 @@ const {
   menuHeaderItemsId,
   resizable,
   windowsHeaderLogo,
-  isSearchVisible
+  isSearchVisible,
+  initMaximized
 } = defineProps({
   id: String,
   title: String,
@@ -97,7 +98,8 @@ const {
   menuHeaderItemsId: String,
   resizable: Boolean,
   windowsHeaderLogo: Boolean,
-  isSearchVisible: Boolean
+  isSearchVisible: Boolean,
+  initMaximized: Boolean
 })
 
 const translatedTitle = title
@@ -115,7 +117,8 @@ const throttleDelay = 16 // Update every 16ms (60 FPS)
 let lastUpdateTimestamp = 0
 
 // Window resizing constants
-const maximized = ref(false)
+const maximized = ref(initMaximized ?? false)
+provide('windowMaximized', maximized)
 
 // Window position and size
 const windowSize = { width: initWidth, height: initHeight }

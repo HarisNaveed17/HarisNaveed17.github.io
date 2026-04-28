@@ -1,8 +1,9 @@
 <template>
-  <div class="relative right-0 h-content-window bg-white">
+  <div class="relative right-0 h-full bg-white">
     <iframe
       v-if="!pdfMissing"
-      src="/pdf/Naveed_Haris_resume.pdf"
+      :key="maximized"
+      :src="iframeSrc"
       class="w-full h-full border-0"
       title="CV"
     />
@@ -14,9 +15,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, inject, onMounted } from 'vue'
 
 const pdfMissing = ref(false)
+const maximized = inject('windowMaximized', ref(false))
+
+const iframeSrc = computed(() =>
+  `/pdf/Naveed_Haris_resume.pdf${maximized.value ? '#zoom=125' : ''}`
+)
 
 onMounted(async () => {
   try {
