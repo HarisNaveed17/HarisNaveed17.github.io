@@ -82,7 +82,7 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
 </script>
 
 <template>
-  <form class="relative right-0 h-full flex flex-col h-content-headless-toolbox">
+  <form class="relative right-0 h-full flex flex-col">
     <!-- Header tools -->
     <div class="bg-window-white border-window-header-bot w-full h-12 py-1 flex items-center px-1 text-xxs gap-0.5">
       <button
@@ -141,7 +141,7 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
       </div>
     </div>
     <!-- Header content -->
-    <div class="bg-window-white border-window-header-bot w-full h-18 flex items-center flex-col p-2 text-xxs gap-2">
+    <div class="bg-window-white border-window-header-bot w-full h-18 flex items-center flex-col p-2 text-sm gap-2">
       <label class="w-full flex gap-2 font-trebuchet-pixel">
         <div class="flex gap-1 w-14 items-center cursor-default">
           <img src="/img/icons/contact/mailto-icon.webp" :alt="$t('windows.contact.to')" class="w-4 h-4" />
@@ -149,7 +149,7 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
         </div>
         <input
           type="text"
-          class="w-full h-5 border border-input-blue p-1.5 text-xs outline-none"
+          class="w-full h-5 border border-input-blue p-1.5 text-sm outline-none"
           value="haris.naveed174@gmail.com"
           readonly="readonly"
         />
@@ -162,7 +162,7 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
         <input
           v-model="userEmail"
           type="email"
-          class="w-full h-5 border border-input-blue p-1.5 text-xs outline-none font-trebuchet-pixel"
+          class="w-full h-5 border border-input-blue p-1.5 text-sm outline-none font-trebuchet-pixel"
           placeholder="jean_doe@wanadoo.com"
         />
       </label>
@@ -170,7 +170,7 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
         <div class="flex gap-1 w-14 items-center justify-center font-trebuchet-pixel cursor-default">
           {{ $t('windows.contact.subject') }}
         </div>
-        <input type="text" v-model="emailSubject" class="w-full h-5 border border-input-blue p-1.5 text-xs outline-none font-trebuchet-pixel" />
+        <input type="text" v-model="emailSubject" class="w-full h-5 border border-input-blue p-1.5 text-sm outline-none font-trebuchet-pixel" />
       </label>
     </div>
     <!-- Main content -->
@@ -179,18 +179,18 @@ watch([userEmail, userMessage, emailSubject], ([newUserEmail, newUserMessage, ne
         <div class="max-w-prose">
           <textarea
             v-model="userMessage"
-            class="w-full h-40 border border-input-blue p-2 text-xs outline-none"
+            class="w-full h-40 border border-input-blue p-2 text-sm outline-none"
             :placeholder="$t('windows.contact.msgPlaceholder')"
           ></textarea>
         </div>
-        <p class="text-xs font-trebuchet-pixel italic mb-2">
+        <p class="text-sm font-trebuchet-pixel italic mb-2">
           {{ $t('windows.contact.description') }}
         </p>
         <div class="flex gap-2 items-center">
-          <p class="text-xs text-green-600 font-medium" v-show="emailSent">
+          <p class="text-sm text-green-600 font-medium" v-show="emailSent">
             {{ $t('windows.contact.success') }}
           </p>
-          <p class="text-xs text-red font-medium" v-show="errorMessage">{{ errorMessage }}</p>
+          <p class="text-sm text-red font-medium" v-show="errorMessage">{{ errorMessage }}</p>
         </div>
       </div>
     </div>

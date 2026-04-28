@@ -88,7 +88,7 @@ window.addEventListener('click', (e) => {
 </script>
 
 <template>
-  <div class="relative right-0 h-content-window flex">
+  <div class="relative right-0 h-full flex">
     <WindowLeftMenu :leftMenuType="props.leftMenuType" />
     <!-- Content of project -->
     <div v-if="goBackStore.currentActiveProject" class="w-full h-full bg-white overflow-auto overflow-x-hidden pb-8 md:pb-5">

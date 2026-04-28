@@ -1,5 +1,5 @@
 <template>
-  <div class="relative right-0 h-content-window flex overflow-hidden">
+  <div class="relative right-0 h-full flex overflow-hidden">
     <WindowLeftMenu :leftMenuType="props.leftMenuType" />
     <!-- Content of project -->
     <div class="w-full h-full bg-pictures-blue overflow-x-hidden">
