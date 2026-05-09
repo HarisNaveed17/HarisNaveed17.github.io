@@ -5,7 +5,7 @@
         <img src="/img/icons/music/logo_spotify.svg" alt="Spotify" class="w-10" />
         <div>
           <h2 class="text-lg font-bold">My Playlists</h2>
-          <p class="text-sm text-gray-500">Click any playlist to open it in Spotify</p>
+          <p class="text-sm text-gray-500">Hand - curated, thematic playlists with some of my favorite music</p>
         </div>
       </div>
       <div v-for="playlist in playlists" :key="playlist.id" class="mb-3">
