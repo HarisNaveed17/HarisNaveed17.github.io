@@ -1,26 +1,23 @@
 [
   {
-    "id": "playlist1",
-    "name": "[Playlist Name 1]",
-    "description": "[Playlist description]",
-    "spotifyUrl": "https://open.spotify.com/playlist/placeholder1",
-    "coverUrl": "/img/icons/music/logo_spotify.svg",
-    "trackCount": 0
+    "id": "5GBJ4yg3Nm3iR4q8wgzt5v",
+    "name": "6,880 miles away.",
+    "description": "Home is where you are.",
+    "spotifyUrl": "https://open.spotify.com/playlist/5GBJ4yg3Nm3iR4q8wgzt5v",
+    "coverUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84327b711be8060bd1d508d5ed"
   },
   {
-    "id": "playlist2",
-    "name": "[Playlist Name 2]",
-    "description": "[Playlist description]",
-    "spotifyUrl": "https://open.spotify.com/playlist/placeholder2",
-    "coverUrl": "/img/icons/music/logo_spotify.svg",
-    "trackCount": 0
+    "id": "5NXupv2B2pDjNJPYPF1ASl",
+    "name": "Sands of Time",
+    "description": "Just in time, out of time.",
+    "spotifyUrl": "https://open.spotify.com/playlist/5NXupv2B2pDjNJPYPF1ASl",
+    "coverUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842a5a7ae9d54929ae38f218f8"
   },
   {
-    "id": "playlist3",
-    "name": "[Playlist Name 3]",
-    "description": "[Playlist description]",
-    "spotifyUrl": "https://open.spotify.com/playlist/placeholder3",
-    "coverUrl": "/img/icons/music/logo_spotify.svg",
-    "trackCount": 0
+    "id": "19vkV9moLV18n4mI9m7qvf",
+    "name": "Happy in Unhappy Times",
+    "description": "ffs don't listen to more sad music when you're already sad (!!)",
+    "spotifyUrl": "https://open.spotify.com/playlist/19vkV9moLV18n4mI9m7qvf",
+    "coverUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e3643be3d5a744b28e162735"
   }
 ]
