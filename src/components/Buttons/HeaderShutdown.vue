@@ -3,10 +3,12 @@ import { useConnectionStore } from '@/stores/connectionStore'
 
 const connectionStore = useConnectionStore()
 
+let shutdownAudio = null
+
 const handleRestart = () => {
   connectionStore.restart()
-  const audio = new Audio('/sounds/shutdown-windows.mp3')
-  audio.play().catch(() => {})
+  shutdownAudio = new Audio('/sounds/shutdown-windows.mp3')
+  shutdownAudio.play().catch(() => {})
 }
 </script>
 
