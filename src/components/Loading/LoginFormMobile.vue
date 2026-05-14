@@ -1,0 +1,21 @@
+<script setup>
+import { useConnectionStore } from '@/stores/connectionStore'
+import ProfilePicture from '@/components/ProfilePicture.vue'
+
+const connectionStore = useConnectionStore()
+
+const handleLogin = () => {
+  connectionStore.login()
+}
+</script>
+
+<template>
+  <div @click="handleLogin">
+    <router-link to="/office" class="cursor-pointer outline-none">
+      <div class="flex flex-col items-center justify-center text-white gap-4">
+        <ProfilePicture class="w-28 h-28 stroke-yellow-2" />
+        <h2 class="text-lg">Haris Naveed</h2>
+      </div>
+    </router-link>
+  </div>
+</template>

@@ -5,8 +5,9 @@
     </template>
 
     <template #center>
-      <div class="flex w-full">
-        <div class="md:flex hidden justify-end items-center w-1/2">
+      <!-- Desktop layout: side-by-side logo + login pill -->
+      <div class="md:flex hidden w-full">
+        <div class="flex justify-end items-center w-1/2">
           <div>
             <div class="flex justify-end w-full">
               <div class="w-2/3">
@@ -22,16 +23,26 @@
             </div>
           </div>
         </div>
-
-        <div class="w-px h-96 line-loading-gradient mx-3 md:flex hidden"></div>
+        <div class="w-px h-96 line-loading-gradient mx-3"></div>
         <LoginForm />
+      </div>
+
+      <!-- Mobile layout: stacked vertical, portfolio logo on top, square login below -->
+      <div class="md:hidden flex flex-col items-center justify-center w-full gap-6 px-6">
+        <div class="w-3/5 max-w-[260px]">
+          <img src="/img/logo-portfolio-white.webp" :alt="$t('alt.logoLogin')" />
+        </div>
+        <h2 class="text-white text-sm text-center opacity-80 px-4">
+          {{ $t('message.toBegin') }}
+        </h2>
+        <LoginFormMobile />
       </div>
     </template>
 
     <template #bottom>
       <div class="absolute bg-color-load-header-blue w-full md:h-48 h-1/5 bottom-0 up-stroke-green-2">
         <div class="flex flex-col justify-center items-center h-full gap-3">
-          <div class="flex text-white md:text-sm text-xs font-bold">
+          <div class="flex text-white md:text-sm text-xs font-bold text-center px-4">
             <h4>{{ $t('message.explainer') }}</h4>
           </div>
           <p class="text-white text-s opacity-60 font-franklin">
@@ -45,5 +56,6 @@
 
 <script setup>
 import LoginForm from '@/components/Loading/LoginForm.vue'
+import LoginFormMobile from '@/components/Loading/LoginFormMobile.vue'
 import ContentCenter from '@/layouts/ContentCenter.vue'
 </script>

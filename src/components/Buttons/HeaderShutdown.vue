@@ -5,6 +5,8 @@ const connectionStore = useConnectionStore()
 
 const handleRestart = () => {
   connectionStore.restart()
+  const audio = new Audio('/sounds/shutdown-windows.mp3')
+  audio.play().catch(() => {})
 }
 </script>
 

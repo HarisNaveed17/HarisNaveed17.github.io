@@ -30,6 +30,8 @@ const startLoading = () => {
         // Step 4: Show connection lobby
         showStep3.value = false
         showStep4.value = true
+        const audio = new Audio('/sounds/start-windows.mp3')
+        audio.play().catch(() => {})
       }, 2000)
     }, 8000)
   }, 2000)

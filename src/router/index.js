@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Loader from '../views/Loader.vue'
 import Office from '../views/Office.vue'
 import MobileView from '../views/MobileView.vue'
+import { useConnectionStore } from '@/stores/connectionStore'
 
 const isMobile = () => window.innerWidth < 768
 
@@ -243,7 +244,9 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-  if (isMobile() && to.name !== 'mobile') {
+  const connectionStore = useConnectionStore()
+  const inTransition = connectionStore.status === 'restart' || connectionStore.status === 'disconnected'
+  if (isMobile() && to.name !== 'mobile' && !inTransition) {
     return { name: 'mobile' }
   }
 })
