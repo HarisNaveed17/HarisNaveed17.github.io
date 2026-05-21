@@ -7,7 +7,7 @@ const route = useRoute()
 
 const updateMetaTags = (to) => {
   useHead({
-    title: to.meta.title || 'Default title',
+    title: to.meta.title || "Haris's Mobile PC",
     meta: (to.meta.metaTags || []).map((tag) => ({
       name: tag.name || tag.property,
       content: tag.content

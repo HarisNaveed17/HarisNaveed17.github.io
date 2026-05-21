@@ -19,7 +19,7 @@ const router = createRouter({
       name: 'home',
       component: Loader,
       meta: {
-        title: 'Haris Naveed — Portfolio',
+        title: "Haris's PC",
         metaTags: [
           {
             rel: 'canonical',
@@ -27,7 +27,7 @@ const router = createRouter({
           },
           {
             name: 'title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'description',
@@ -60,11 +60,11 @@ const router = createRouter({
           },
           {
             name: 'apple-mobile-web-app-title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'application-name',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'twitter:card',
@@ -72,7 +72,7 @@ const router = createRouter({
           },
           {
             name: 'twitter:title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'twitter:description',
@@ -93,7 +93,7 @@ const router = createRouter({
           },
           {
             property: 'og:title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             property: 'og:description',
@@ -102,7 +102,7 @@ const router = createRouter({
           },
           {
             property: 'og:site_name',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             property: 'og:url',
@@ -132,7 +132,7 @@ const router = createRouter({
       name: 'Office',
       component: Office,
       meta: {
-        title: 'Haris Naveed — Portfolio',
+        title: "Haris's PC",
         metaTags: [
           {
             rel: 'canonical',
@@ -140,7 +140,7 @@ const router = createRouter({
           },
           {
             name: 'title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'description',
@@ -173,11 +173,11 @@ const router = createRouter({
           },
           {
             name: 'apple-mobile-web-app-title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'application-name',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'twitter:card',
@@ -185,7 +185,7 @@ const router = createRouter({
           },
           {
             name: 'twitter:title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'twitter:description',
@@ -206,7 +206,7 @@ const router = createRouter({
           },
           {
             name: 'og:title',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'og:description',
@@ -215,7 +215,7 @@ const router = createRouter({
           },
           {
             name: 'og:site_name',
-            content: 'Haris Naveed — Portfolio'
+            content: "Haris's PC"
           },
           {
             name: 'og:url',
