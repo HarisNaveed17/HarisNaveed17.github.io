@@ -104,9 +104,24 @@ window.addEventListener('click', (e) => {
             </svg>
             <h2 class="text-sm md:text-base">{{ localizedDate }}</h2>
           </div>
+          <div class="flex gap-2 mt-2">
+            <a v-if="goBackStore.currentActiveProject.Code"
+              :href="goBackStore.currentActiveProject.Code" target="_blank"
+              class="text-sm border border-gray-400 px-4 py-1.5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer">Code</a>
+            <a v-if="goBackStore.currentActiveProject.Read"
+              :href="goBackStore.currentActiveProject.Read" target="_blank"
+              class="text-sm border border-gray-400 px-4 py-1.5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer">Read the Paper</a>
+            <a v-if="goBackStore.currentActiveProject.githubUrl"
+              :href="goBackStore.currentActiveProject.githubUrl" target="_blank"
+              class="text-sm border border-gray-400 px-4 py-1.5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer">Code</a>
+          </div>
         </div>
-        <div v-if="goBackStore.currentActiveProject.description" class="text-sm mb-3">
+        <div v-if="goBackStore.currentActiveProject.description" class="text-base mb-3" style="white-space: pre-wrap">
           {{ goBackStore.currentActiveProject.description }}
+        </div>
+        <div v-if="goBackStore.currentActiveProject.Retro" class="text-base mb-3">
+          <p class="text-sm font-bold mb-1">Retro</p>
+          <span style="white-space: pre-wrap">{{ goBackStore.currentActiveProject.Retro }}</span>
         </div>
         <div v-if="goBackStore.currentActiveProject.techStack && goBackStore.currentActiveProject.techStack.length" class="mb-3">
           <p class="text-xs font-bold mb-1">Tech Stack:</p>
@@ -114,10 +129,6 @@ window.addEventListener('click', (e) => {
             <span v-for="tech in goBackStore.currentActiveProject.techStack" :key="tech"
               class="text-xs border border-gray-400 px-2 py-0.5 bg-gray-50 rounded">{{ tech }}</span>
           </div>
-        </div>
-        <div v-if="goBackStore.currentActiveProject.githubUrl">
-          <a :href="goBackStore.currentActiveProject.githubUrl" target="_blank"
-            class="text-xs text-blue-600 underline">View on GitHub</a>
         </div>
       </div>
     </div>
