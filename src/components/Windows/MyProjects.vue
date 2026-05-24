@@ -108,8 +108,8 @@ window.addEventListener('click', (e) => {
             <a v-if="goBackStore.currentActiveProject.Code"
               :href="goBackStore.currentActiveProject.Code" target="_blank"
               class="text-sm border border-gray-400 px-4 py-1.5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer">Code</a>
-            <a v-if="goBackStore.currentActiveProject.Read"
-              :href="goBackStore.currentActiveProject.Read" target="_blank"
+            <a v-if="goBackStore.currentActiveProject.Paper"
+              :href="goBackStore.currentActiveProject.Paper" target="_blank"
               class="text-sm border border-gray-400 px-4 py-1.5 bg-gray-100 hover:bg-gray-200 rounded cursor-pointer">Read the Paper</a>
             <a v-if="goBackStore.currentActiveProject.githubUrl"
               :href="goBackStore.currentActiveProject.githubUrl" target="_blank"
