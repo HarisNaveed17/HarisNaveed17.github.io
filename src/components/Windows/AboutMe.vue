@@ -11,7 +11,7 @@
     <section class="mb-4">
       <h2 class="text-base font-bold underline mb-2">About</h2>
       <p class="text-sm leading-relaxed">
-        I'm a 27 year old Machine Learning Engineer based in Islamabad. I have an MS in Data Science from NYU as a Fulbright Scholar. 
+        I'm a Machine Learning Engineer based in Islamabad. I have an MS in Data Science from NYU as a Fulbright Scholar. 
         I'm interested in scalable, fault tolerant ML-systems, technical AI safety and algorithmic harm. 
       </p>
     </section>
