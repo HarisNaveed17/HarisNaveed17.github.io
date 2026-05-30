@@ -1,37 +1,79 @@
 {
+  "profile": {
+    "name": "Haris Naveed",
+    "email": "haris.naveed174@gmail.com",
+    "linkedin": "linkedin.com/in/haris",
+    "github": "github.com/HarisNaveed17"
+  },
   "education": [
     {
-      "degree": "[DEGREE TITLE]",
-      "institution": "[Institution Name]",
-      "year": "[Year Range]",
-      "details": "[Relevant coursework or notes]"
+      "degree": "Master of Science in Data Science",
+      "institution": "New York University",
+      "location": "New York, New York",
+      "year": "May 2025",
+      "details": "Fulbright Scholar"
     },
     {
-      "degree": "[DEGREE TITLE]",
-      "institution": "[Institution Name]",
-      "year": "[Year Range]",
-      "details": "[Relevant coursework or notes]"
+      "degree": "Bachelor's in Electrical Engineering",
+      "institution": "National University of Sciences and Technology (NUST)",
+      "location": "Islamabad, Pakistan",
+      "year": "Aug. 2017 – June 2021",
+      "details": ""
     }
   ],
   "workExperience": [
     {
-      "jobTitle": "[JOB TITLE]",
-      "company": "[Company Name]",
-      "year": "[Date Range]",
+      "jobTitle": "Software Engineer - MLOps",
+      "company": "Motive",
+      "location": "Islamabad, Pakistan",
+      "year": "July 2025 – Present",
       "responsibilities": [
-        "[Key responsibility or achievement]",
-        "[Key responsibility or achievement]",
-        "[Key responsibility or achievement]"
+        "Developed a langgraph-based agentic workflow to automate manual, repetitive pre and post deployment administrative tasks for a core service. Reduced time taken to build a new release from 81 to 25 minutes.",
+        "Developed the backend logic for a service that leveraged Vision-Language Models (VLMs) to search thousands of videos to identify unsafe driving behavior."
       ]
     },
     {
-      "jobTitle": "[JOB TITLE]",
-      "company": "[Company Name]",
-      "year": "[Date Range]",
+      "jobTitle": "Graduate Teaching Assistant",
+      "company": "NYU Center for Data Science",
+      "location": "New York, New York",
+      "year": "January 2025 – May 2025",
       "responsibilities": [
-        "[Key responsibility or achievement]",
-        "[Key responsibility or achievement]"
+        "Graded assignments for DS-1017: Responsible Data Science taught by Dr. Emily Black & Lucas Rosenblatt for the Spring '25 semester.",
+        "Designed questions and updated homeworks to reflect the latest techniques used in auditing AI-based decision systems.",
+        "Held weekly office hours to assist students with homework, projects and other questions."
+      ]
+    },
+    {
+      "jobTitle": "Machine Learning Engineer",
+      "company": "SimPPL",
+      "location": "New York, New York",
+      "year": "September 2024 – Present",
+      "responsibilities": [
+        "Developed a RAG (Retrieval-Augmented Generation)-based search system that accelerated narrative identification by producing an answer and retrieving its context from a closed-source dataset.",
+        "Set up the initial pipeline to process raw data, generate embeddings and store them in a vector database, while ensuring scalability for large data volumes.",
+        "Compared different RAG and retriever combinations on factual, complex and vague questions. Identified GraphRAG with a multi-query retriever as the ideal system with an overall 60% win-rate."
       ]
     }
-  ]
+  ],
+  "publications": [
+    {
+      "citation": "M. H. Naveed, U. S. Hashmi, N. Tajved, N. Sultan and A. Imran, \"Assessing Deep Generative Models on Time Series Network Data,\" in IEEE Access, vol. 10"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Retrieval Augmented Generation for Financial Question-Answering",
+      "stack": "Python, LangChain, ChromaDB",
+      "points": [
+        "Background: LLMs often struggle with factual accuracy on financial queries due to structured/unstructured data and specialized terminology.",
+        "Work: Expanded on the FinanceBench paper by building a baseline model with 37% accuracy, then exploring semantic chunking and contextual retrieval.",
+        "Results: A Naive RAG system combined with semantic chunking achieved 54% accuracy — a 17% improvement over the baseline."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": "Python, R, SQL, LangChain/Langgraph",
+    "tools": "Docker, K8s, Git, Linux, IntelliJ IDE, VS Code, RStudio, Claude Code",
+    "libraries": "Pandas, NumPy, matplotlib, PyTorch, scikit-learn, tidyverse, Fairlearn, statsmodels"
+  }
 }
