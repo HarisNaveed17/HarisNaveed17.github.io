@@ -8,7 +8,13 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
   base: '/',
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => ['wm-player', 'wm-slider'].includes(tag)
+        }
+      }
+    }),
     vueJsx(),
   ],
   resolve: {
