@@ -14,6 +14,7 @@
       @toggle-music="openWindow('music')"
       @toggle-minesweeper="openWindow('minesweeper')"
       @toggle-skills="openWindow('skills')"
+      @toggle-mediaPlayer="openWindow('mediaPlayer')"
     />
     <DesktopAppsLayout
       :entities="entities"
@@ -25,6 +26,7 @@
       @toggle-minesweeper="openWindow('minesweeper')"
       @toggle-skills="openWindow('skills')"
       @toggle-substack="openSubstack()"
+      @toggle-mediaPlayer="openWindow('mediaPlayer')"
     />
     <div v-for="window in windows" :key="window.id">
       <Window
@@ -75,6 +77,7 @@ import MyProjects from '@/components/Windows/MyProjects.vue'
 import Documents from '@/components/Windows/Documents/Documents.vue'
 import Pictures from '@/components/Windows/Pictures.vue'
 import Skills from '@/components/Windows/Skills.vue'
+import MediaPlayer from '@/components/Windows/MediaPlayer/MediaPlayer.vue'
 
 import DesktopAppsLayout from '@/layouts/DesktopAppsLayout.vue'
 import Window from '@/layouts/Window.vue'
@@ -105,15 +108,24 @@ const components = {
   Minesweeper: shallowRef(Minesweeper),
   Documents: shallowRef(Documents),
   Pictures: shallowRef(Pictures),
-  Skills: shallowRef(Skills)
+  Skills: shallowRef(Skills),
+  MediaPlayer: shallowRef(MediaPlayer)
 }
 
 // Create the entities array from the data.json
+// MediaPlayer is desktop-only for now — its fixed widths, WebGL visualizer,
+// and iOS MediaElementSource quirks make the mobile experience unreliable.
+const isMobileViewport =
+  typeof window !== 'undefined' &&
+  (window.innerWidth < 768 || /Mobi|Android/i.test(navigator.userAgent))
+
 const entities = ref(
-  windowsData.map((item) => ({
-    ...item,
-    component: components[item.component]
-  }))
+  windowsData
+    .filter((item) => !(isMobileViewport && item.id === 'mediaPlayer'))
+    .map((item) => ({
+      ...item,
+      component: components[item.component]
+    }))
 )
 
 const toggleHeader = () => {
