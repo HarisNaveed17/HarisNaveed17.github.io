@@ -29,6 +29,7 @@
       @toggle-minesweeper="openWindow('minesweeper')"
       @toggle-skills="openWindow('skills')"
       @toggle-substack="openSubstack()"
+      @toggle-mediaPlayer="wmpNotification.show()"
     />
     <div v-for="window in windows" :key="window.id">
       <Window
@@ -59,6 +60,7 @@
     </div>
     <Footer :entities="windows" @toggle-header="toggleHeader" @toggle-window="handleWindowClick" />
     <ClippyModal />
+    <WmpMobileNotification ref="wmpNotification" />
   </section>
 </template>
 
@@ -84,10 +86,12 @@ import DesktopAppsLayout from '@/layouts/DesktopAppsLayout.vue'
 import Window from '@/layouts/Window.vue'
 import windowsData from '@/data/windows-data.json'
 import ClippyModal from '@/components/Modals/ClippyModal.vue'
+import WmpMobileNotification from '@/components/Modals/WmpMobileNotification.vue'
 
 const showHeader = ref(false)
 const windows = ref([])
 const windowsStore = useWindowsStore()
+const wmpNotification = ref(null)
 
 onMounted(() => {
   windowsStore.loadState()
