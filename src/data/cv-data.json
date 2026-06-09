@@ -23,7 +23,7 @@
   ],
   "workExperience": [
     {
-      "jobTitle": "Software Engineer - MLOps",
+      "jobTitle": "Software Engineer - AI",
       "company": "Motive",
       "location": "Islamabad, Pakistan",
       "year": "July 2025 – Present",
@@ -38,8 +38,8 @@
       "location": "New York, New York",
       "year": "January 2025 – May 2025",
       "responsibilities": [
-        "Graded assignments for DS-1017: Responsible Data Science taught by Dr. Emily Black & Lucas Rosenblatt for the Spring '25 semester.",
         "Designed questions and updated homeworks to reflect the latest techniques used in auditing AI-based decision systems.",
+        "Graded assignments for DS-1017: Responsible Data Science taught by Dr. Emily Black & Lucas Rosenblatt for the Spring '25 semester.",
         "Held weekly office hours to assist students with homework, projects and other questions."
       ]
     },
@@ -47,7 +47,7 @@
       "jobTitle": "Machine Learning Engineer",
       "company": "SimPPL",
       "location": "New York, New York",
-      "year": "September 2024 – Present",
+      "year": "October 2024 – Present",
       "responsibilities": [
         "Developed a RAG (Retrieval-Augmented Generation)-based search system that accelerated narrative identification by producing an answer and retrieving its context from a closed-source dataset.",
         "Set up the initial pipeline to process raw data, generate embeddings and store them in a vector database, while ensuring scalability for large data volumes.",
@@ -57,7 +57,8 @@
   ],
   "publications": [
     {
-      "citation": "M. H. Naveed, U. S. Hashmi, N. Tajved, N. Sultan and A. Imran, \"Assessing Deep Generative Models on Time Series Network Data,\" in IEEE Access, vol. 10"
+      "citation": "M. H. Naveed, U. S. Hashmi, N. Tajved, N. Sultan and A. Imran, \"Assessing Deep Generative Models on Time Series Network Data,\" in IEEE Access, vol. 10",
+      "url": "https://ieeexplore.ieee.org/document/9781420"
     }
   ],
   "projects": [
@@ -72,8 +73,8 @@
     }
   ],
   "skills": {
-    "languages": "Python, R, SQL, LangChain/Langgraph",
-    "tools": "Docker, K8s, Git, Linux, IntelliJ IDE, VS Code, RStudio, Claude Code",
-    "libraries": "Pandas, NumPy, matplotlib, PyTorch, scikit-learn, tidyverse, Fairlearn, statsmodels"
+    "languages": "Python, R, SQL",
+    "tools": "Docker, K8s, Git, Linux, IntelliJ IDE, VS Code, RStudio",
+    "libraries": "Pandas, NumPy, matplotlib, PyTorch, scikit-learn, tidyverse, Fairlearn, statsmodels, LangChain/Langgraph"
   }
 }

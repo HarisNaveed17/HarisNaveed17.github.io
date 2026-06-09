@@ -2,23 +2,23 @@
   "categories": [
     {
       "name": "Machine Learning & AI",
-      "skills": ["[Framework 1]", "[Framework 2]", "[Framework 3]", "[Framework 4]"]
-    },
-    {
-      "name": "MLOps & Infrastructure",
-      "skills": ["[Tool 1]", "[Tool 2]", "[Tool 3]", "[Tool 4]"]
+      "skills": ["PyTorch", "scikit-learn", "LangChain", "LangGraph", "Fairlearn", "statsmodels", "GANs", "RAG / GraphRAG", "Vision-Language Models (VLMs)"]
     },
     {
       "name": "Programming Languages",
-      "skills": ["[Language 1]", "[Language 2]", "[Language 3]"]
+      "skills": ["Python", "R", "SQL"]
     },
     {
-      "name": "Data & Databases",
-      "skills": ["[Tool 1]", "[Tool 2]", "[Tool 3]"]
+      "name": "Data Science & Analysis",
+      "skills": ["Pandas", "NumPy", "matplotlib", "tidyverse"]
     },
     {
-      "name": "Cloud & DevOps",
-      "skills": ["[Platform 1]", "[Platform 2]", "[Tool 3]"]
+      "name": "MLOps & Infrastructure",
+      "skills": ["Docker", "Kubernetes", "Git", "Linux", "ChromaDB", "Vector Databases"]
+    },
+    {
+      "name": "Development Tools",
+      "skills": ["VS Code", "IntelliJ IDE", "RStudio"]
     }
   ]
 }

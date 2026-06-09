@@ -23,7 +23,8 @@
       <section class="mb-3">
         <h2 class="font-tahoma text-sm font-bold uppercase tracking-widest mb-1">Publications</h2>
         <p v-for="(pub, i) in cvData.publications" :key="i" class="font-trebuchet-pixel text-sm mt-1 font-bold">
-          {{ pub.citation }}
+          <a v-if="pub.url" :href="pub.url" target="_blank" class="hover:underline">{{ pub.citation }}</a>
+          <span v-else>{{ pub.citation }}</span>
         </p>
       </section>
 
