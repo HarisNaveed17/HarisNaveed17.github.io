@@ -20,6 +20,6 @@
     <h2 class="text-base font-semibold">{{ $t('windows.documents.legal.contact') }}</h2>
     <hr class="mt-1 mb-2 border-t-1 border-gray-400" />
     <p class="text-sm">{{ $t('windows.documents.legal.sixthParagraph') }}</p>
-    <p class="text-sm mb-3">[YOUR_EMAIL@example.com]</p>
+    <p class="text-sm mb-3">haris.naveed174@gmail.com</p>
   </section>
 </template>

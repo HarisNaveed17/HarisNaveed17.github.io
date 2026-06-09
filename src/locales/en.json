@@ -114,12 +114,24 @@
     "documents": {
       "legal": {
         "title": "Legal notices",
-        "firstParagraph": "In accordance with applicable law, users of the Portfolio - [YOUR NAME] website are informed of the identity of the various parties involved in its creation and monitoring.",
+        "firstParagraph": "In accordance with applicable law, users of the Portfolio - Haris Naveed website are informed of the identity of the various parties involved in its creation and monitoring.",
         "edit": "Site editing",
         "secondParagraph": "This site, accessible at the URL https://hnaveed.me (the « Site »), is edited by:",
         "thirdParagraph": "Haris Naveed",
         "hosting": "Hosting",
-        "fourthParagraph": "The Site is hosted by GitHub Pages, which can be contacted at the following address: https://pages.github.com"
+        "fourthParagraph": "The Site is hosted by GitHub Pages, which can be contacted at the following address: https://pages.github.com",
+        "dirPublication": "Publication director",
+        "fifthParagraph": "The publication director of the site is Haris Naveed.",
+        "contact": "Contact",
+        "sixthParagraph": "You can contact the site owner at the following address:"
+      },
+      "about": {
+        "title": "How to Navigate this Website",
+        "helpFirst": "Double-click any desktop icon to open a window.",
+        "helpSecond": "Windows can be moved, resized, minimized, and closed like a real OS.",
+        "helpThird": "Use the Start button in the bottom-left to access all sections.",
+        "helpFourth": "The taskbar at the bottom shows all open windows.",
+        "helpFifth": "Check out the Media Player and Minesweeper for some fun!"
       }
     }
   },
@@ -132,8 +144,6 @@
   "clippy": {
     "greeting": "Hi there! 👋",
     "message": "It looks like you're enjoying this portfolio! Would you like to support the project?",
-    "starRepo": "Star on GitHub",
-    "buyMeCoffee": "Buy me a coffee",
     "dontShowAgain": "Don't show this again",
     "close": "Close",
     "clippyAlt": "Clippy assistant"

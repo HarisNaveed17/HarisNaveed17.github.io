@@ -53,7 +53,7 @@ const pages = ref([
     name: 'windows.documents.about.title',
     type: 'common.textDocument',
     icon: 'txt-icon.webp',
-    size: '5KB',
+    size: '2KB',
     isFocused: false,
     isActive: false,
     component: 'About'
