@@ -7,7 +7,7 @@
       "description": "Swaggy snowman",
       "date": "Feb 9, 2025",
       "src": "/img/photos/snowman.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "A cheerful snowman in Central Park, New York"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "description": "The Choral Society and Orchestra of Grace Church in New York performs at Carnegie Hall",
       "date": "April 9, 2025",
       "src": "/img/photos/carnegie-hall.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Interior of Carnegie Hall during a choral and orchestral performance"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "description": "Sunset on Manshi Top",
       "date": "November 20, 2025",
       "src": "/img/photos/Sharan.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Sunset over Manshi Top in Sharan Forest, Khyber Pakhtunkhwa, Pakistan"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "description": "Been dreaming about this quiet, beautiful beach ever since.",
       "date": "January 10, 2025",
       "src": "/img/photos/sunbay-beach.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "A quiet, sun-drenched beach on the island of Vieques, Puerto Rico"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "description": "View of Washington square Park from NYU's Kimmel Center, on commencement day",
       "date": "May 15, 2025",
       "src": "/img/photos/wsp-nyu.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Washington Square Park seen from NYU's Kimmel Center on commencement day"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "description": "Another bohemian neighborhood slowly getting gentrified.",
       "date": "April 27, 2025",
       "src": "/img/photos/wynwood.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Colorful street art in the Wynwood arts district, Miami"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "description": "Grateful for friends who drive you up to Vermont so you can experience peak fall foliage.",
       "date": "November 11, 2024",
       "src": "/img/photos/vermont.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Peak autumn foliage reflected in Kent Pond, Vermont"
     },
     {
       "id": 8,
@@ -70,16 +70,16 @@
       "description": "The view at the end of a tunnel",
       "date": "January 2, 2024",
       "src": "/img/photos/yosemite.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "A dramatic valley view framed by a tunnel exit in Yosemite National Park"
     },
     {
       "id": 9,
       "title": "Welcome back to New York",
-      "location": "Beford Av station, Brooklyn",
+      "location": "Bedford Av station, Brooklyn",
       "description": "Nothing quite like a morning rush hour.",
       "date": "January 13, 2025",
       "src": "/img/photos/L-train-on-monday.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Morning rush hour at Bedford Avenue L train station in Brooklyn, New York"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "description": "A slice of Switzerland in America",
       "date": "June 3, 2025",
       "src": "/img/photos/telluride.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Mountain scenery in Telluride, Colorado"
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "description": "One of many subway ads that caught my attention over the years",
       "date": "October 4, 2024",
       "src": "/img/photos/subway-ad.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "A Backmarket advertisement on a New York City subway car"
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "description": "Repeatedly told my sister that this place was overrated, was proven wrong. It is correctly rated.",
       "date": "May 13, 2025",
       "src": "/img/photos/niagara.jpg",
-      "alt": "[Photo alt text]"
+      "alt": "Niagara Falls viewed from the American side"
     }
   ]
 }
