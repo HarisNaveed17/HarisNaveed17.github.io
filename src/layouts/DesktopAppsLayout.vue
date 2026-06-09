@@ -79,7 +79,7 @@ window.addEventListener('click', (e) => {
           :alt="getLocalizedTitle(entity)"
         />
         <p
-          class="text-white text-xs font-normal py-px px-1"
+          class="text-white text-xs font-normal py-px px-1 text-center break-words w-20"
           :style="{
             ...entity.textStyle,
             backgroundColor: entity.isActive ? '#0B61FF' : 'transparent',
