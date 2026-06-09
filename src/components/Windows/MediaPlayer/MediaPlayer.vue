@@ -49,12 +49,15 @@
       >
         <!-- Album art + info -->
         <div class="flex flex-col items-center py-3 px-2 flex-shrink-0 border-b border-gray-300">
-          <!--
-            ALBUM ART PLACEHOLDER
-            Replace this div with an <img> when art is ready:
-            <img src="/path/to/art.jpg" class="w-20 h-20 object-cover border border-gray-400 rounded-sm" />
-          -->
+          <img
+            v-if="!customTrackName"
+            src="/img/album_cover.png"
+            alt="Album cover"
+            class="flex-shrink-0 object-cover"
+            style="width:76px;height:76px;border:1px solid #bbb;border-radius:2px;"
+          />
           <div
+            v-else
             class="flex items-center justify-center flex-shrink-0"
             style="width:76px;height:76px;background:#cdcdcd;border:1px solid #bbb;border-radius:2px;"
           >
@@ -139,8 +142,8 @@ const currentTime     = ref(0)
 const duration        = ref(0)
 const customTrackName = ref(null)
 
-const DEFAULT_TITLE  = 'Zara Nazron Se Keh Do'
-const DEFAULT_ARTIST = 'Artist Placeholder'
+const DEFAULT_TITLE  = 'Need You'
+const DEFAULT_ARTIST = 'Lost Sky'
 
 const displayTitle  = computed(() => customTrackName.value ?? DEFAULT_TITLE)
 const displayArtist = computed(() => customTrackName.value ? '' : DEFAULT_ARTIST)
@@ -311,7 +314,7 @@ onMounted(() => {
   const wmp = wmpRef.value
   if (wmp) {
     // Set the default track
-    wmp.setAttribute('src', '/sounds/Zara_nazroun_se_kehdo.mp3')
+    wmp.setAttribute('src', '/sounds/Lost Sky - Need You [NCS Release].mp3')
 
     // Remove the fullscreen button — it would fullscreen only the tray, not the canvas
     const fsBtn = wmp.shadowRoot?.querySelector('.fullscreen')
