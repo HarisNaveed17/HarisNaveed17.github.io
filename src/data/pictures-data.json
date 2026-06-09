@@ -2,20 +2,110 @@
   "pictures": [
     {
       "id": 1,
-      "title": "[Photo Title]",
-      "location": "[Location]",
-      "description": "[Photo description]",
-      "date": "[Date]",
-      "src": "/img/photos/placeholder-1.webp",
+      "title": "Right back at you beautiful!",
+      "location": "Central Park, New York",
+      "description": "Swaggy snowman",
+      "date": "Feb 9, 2025",
+      "src": "/img/photos/snowman.jpg",
       "alt": "[Photo alt text]"
     },
     {
       "id": 2,
-      "title": "[Photo Title]",
-      "location": "[Location]",
-      "description": "[Photo description]",
-      "date": "[Date]",
-      "src": "/img/photos/placeholder-2.webp",
+      "title": "Classical Music",
+      "location": "Carnegie Hall, New York",
+      "description": "The Choral Society and Orchestra of Grace Church in New York performs at Carnegie Hall",
+      "date": "April 9, 2025",
+      "src": "/img/photos/carnegie-hall.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 3,
+      "title": "Dusk",
+      "location": "Sharan Forest, KP, Pakistan",
+      "description": "Sunset on Manshi Top",
+      "date": "November 20, 2025",
+      "src": "/img/photos/Sharan.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 4,
+      "title": "Caribbean Winter",
+      "location": "Vieques, Puerto Rico",
+      "description": "Been dreaming about this quiet, beautiful beach ever since.",
+      "date": "January 10, 2025",
+      "src": "/img/photos/sunbay-beach.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 5,
+      "title": "One Last Time",
+      "location": "Washington Square Park, New York",
+      "description": "View of Washington square Park from NYU's Kimmel Center, on commencement day",
+      "date": "May 15, 2025",
+      "src": "/img/photos/wsp-nyu.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 6,
+      "title": "Mask on, Mask off",
+      "location": "Wynwood, Miami",
+      "description": "Another bohemian neighborhood slowly getting gentrified.",
+      "date": "April 27, 2025",
+      "src": "/img/photos/wynwood.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 7,
+      "title": "Autumn drive",
+      "location": "Kent Pond, Vermont",
+      "description": "Grateful for friends who drive you up to Vermont so you can experience peak fall foliage.",
+      "date": "November 11, 2024",
+      "src": "/img/photos/vermont.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 8,
+      "title": "California Dreaming",
+      "location": "Yosemite, California",
+      "description": "The view at the end of a tunnel",
+      "date": "January 2, 2024",
+      "src": "/img/photos/yosemite.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 9,
+      "title": "Welcome back to New York",
+      "location": "Beford Av station, Brooklyn",
+      "description": "Nothing quite like a morning rush hour.",
+      "date": "January 13, 2025",
+      "src": "/img/photos/L-train-on-monday.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 10,
+      "title": "Mountain Man",
+      "location": "Telluride, Colorado",
+      "description": "A slice of Switzerland in America",
+      "date": "June 3, 2025",
+      "src": "/img/photos/telluride.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 11,
+      "title": "Free backmarket marketing",
+      "location": "Subway",
+      "description": "One of many subway ads that caught my attention over the years",
+      "date": "October 4, 2024",
+      "src": "/img/photos/subway-ad.jpg",
+      "alt": "[Photo alt text]"
+    },
+    {
+      "id": 12,
+      "title": "The US side is pretty dope too.",
+      "location": "Niagara Falls",
+      "description": "Repeatedly told my sister that this place was overrated, was proven wrong. It is correctly rated.",
+      "date": "May 13, 2025",
+      "src": "/img/photos/niagara.jpg",
       "alt": "[Photo alt text]"
     }
   ]
