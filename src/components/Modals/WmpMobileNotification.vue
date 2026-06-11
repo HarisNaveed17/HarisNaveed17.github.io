@@ -33,7 +33,7 @@ let autoTimer = null
 
 function show() {
   visible.value = true
-  autoTimer = setTimeout(dismiss, 15000)
+  autoTimer = setTimeout(dismiss, 10000)
 }
 
 function dismiss() {
