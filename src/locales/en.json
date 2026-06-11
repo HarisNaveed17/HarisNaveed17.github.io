@@ -38,7 +38,7 @@
   },
   "message": {
     "welcome": "Welcome to my Intel Core 2 Duo with 2GB of RAM from 2005",
-    "toBegin": "To enter the website, log in",
+    "toBegin": "To enter the website, log in by clicking the profile picture",
     "explainer": "First time? Go to the About section. Second time? Check out some of my thematic playlists :^)"
   },
 
@@ -129,7 +129,7 @@
         "title": "About this Website"
       },
       "about": {
-        "title": "How to Navigate this Website",
+        "title": "How to Navigate",
         "helpFirst": "Double-click any desktop icon to open a window.",
         "helpSecond": "Windows can be moved, resized, minimized, and closed like a real OS.",
         "helpThird": "Use the Start button in the bottom-left to access all sections.",

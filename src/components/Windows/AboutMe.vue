@@ -31,7 +31,7 @@
     <section class="mb-4">
       <h2 class="text-base font-bold underline mb-2">Formerly</h2>
       <ul class="text-sm leading-relaxed list-disc list-inside space-y-1">
-        <li>Graduate Teaching Assistant @ NYU for Responsible Data Science (Jan '25 - May '25)</li>
+        <li>Graduate Teaching Assistant @ NYU (Jan '25 - May '25)</li>
         <li>Machine Learning Engineer @ Simppl (Oct '24 - May '25)</li>
         <li>Machine Learning Engineer @ DCube (July '21 - June '22)</li>
       </ul>
