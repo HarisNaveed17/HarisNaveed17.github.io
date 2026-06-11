@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, watch, computed, onUnmounted, defineAsyncComponent } from 'vue'
+import { ref, reactive, watch, computed, onMounted, onUnmounted, defineAsyncComponent } from 'vue'
 import { marked } from 'marked'
 import { useGoBackStore } from '@/stores/goBackStore'
 
@@ -25,6 +25,11 @@ const props = defineProps({
 })
 
 const goBackStore = useGoBackStore()
+const isMobile = ref(false)
+
+onMounted(() => {
+  isMobile.value = window.innerWidth < 768
+})
 
 onUnmounted(() => {
   goBackStore.currentActiveProject = null
@@ -184,8 +189,8 @@ window.addEventListener('click', (e) => {
           <div
             v-for="project in category.projects"
             :key="project.name"
-            @click="focusProject(project)"
-            @dblclick="toggleProject(project)"
+            @click="isMobile ? toggleProject(project) : focusProject(project)"
+            @dblclick="!isMobile && toggleProject(project)"
             class="flex items-center px-4 pb-2 gap-2.5 cursor-pointer project-card"
             :class="{ active: project.isFocus }"
           >

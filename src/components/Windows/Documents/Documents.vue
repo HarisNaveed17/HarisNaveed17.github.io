@@ -8,8 +8,8 @@
             <div
               v-for="page in pages"
               :key="page.name"
-              @click="focusPage(page)"
-              @dblclick="toggleProject(page)"
+              @click="isMobile ? toggleProject(page) : focusPage(page)"
+              @dblclick="!isMobile && toggleProject(page)"
               class="flex items-center gap-1 cursor-pointer"
               :class="{ active: page.isFocused }"
             >
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useGoBackStore } from '@/stores/goBackStore'
 import WindowLeftMenu from '@/components/Windows/WindowLeftMenu.vue'
 import About from './About.vue'
@@ -44,6 +44,11 @@ import AboutWebsite from './AboutWebsite.vue'
 
 // Stores management
 const goBackStore = useGoBackStore()
+const isMobile = ref(false)
+
+onMounted(() => {
+  isMobile.value = window.innerWidth < 768
+})
 
 const props = defineProps({
   leftMenuType: String
