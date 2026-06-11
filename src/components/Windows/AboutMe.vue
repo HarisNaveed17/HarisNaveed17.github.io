@@ -24,7 +24,7 @@
       <h2 class="text-base font-bold underline mb-2">Currently</h2>
       <ul class="text-sm leading-relaxed list-disc list-inside space-y-1">
         <li>Software Engineer - AI @ Motive (July '25 - Present)</li>
-        <li>ML Engineer @ Simppl (Volunteer) (Oct '24 - Present)</li>
+        <li>Research Affiliate @ Simppl (June '25 - Present)</li>
       </ul>
     </section>
 
@@ -32,6 +32,7 @@
       <h2 class="text-base font-bold underline mb-2">Formerly</h2>
       <ul class="text-sm leading-relaxed list-disc list-inside space-y-1">
         <li>Graduate Teaching Assistant @ NYU for Responsible Data Science (Jan '25 - May '25)</li>
+        <li>Machine Learning Engineer @ Simppl (Oct '24 - May '25)</li>
         <li>Machine Learning Engineer @ DCube (July '21 - June '22)</li>
       </ul>
     </section>
