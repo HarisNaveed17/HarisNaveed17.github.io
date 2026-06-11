@@ -1,12 +1,15 @@
 <script setup>
 import { useConnectionStore } from '@/stores/connectionStore'
+import { useRouter } from 'vue-router'
 import ProfilePicture from '@/components/ProfilePicture.vue'
 
 const connectionStore = useConnectionStore()
+const router = useRouter()
 
 const handleLogin = () => {
   new Audio('/sounds/start-windows.mp3').play().catch(() => {})
   connectionStore.login()
+  router.push({ name: 'mobile' })
 }
 </script>
 
