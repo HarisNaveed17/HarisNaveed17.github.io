@@ -50,7 +50,7 @@
         <!-- Album art + info -->
         <div class="flex flex-col items-center py-3 px-2 flex-shrink-0 border-b border-gray-300">
           <img
-            v-if="!customTrackName"
+            v-if="isDefaultActive"
             src="/img/album_cover.png"
             alt="Album cover"
             class="flex-shrink-0 object-cover"
@@ -87,16 +87,31 @@
           <span style="color:#c87800;font-size:10px;">▼</span>
         </div>
 
-        <!-- Current track entry -->
+        <!-- Default track entry — always visible -->
         <div
-          class="px-2 py-1 flex-shrink-0 border-b border-gray-200"
+          class="px-2 py-1 flex-shrink-0 border-b border-gray-200 cursor-pointer"
           style="font-size:11px;background:#f4f4f4;"
+          @click="playDefault"
         >
-          <span :style="{ color: isPlaying ? '#0050bb' : '#555', marginRight: '3px' }">{{ isPlaying ? '▶' : '◼' }}</span>
+          <span :style="{ color: (isDefaultActive && isPlaying) ? '#0050bb' : '#555', marginRight: '3px' }">{{ isDefaultActive && isPlaying ? '▶' : '◼' }}</span>
           <span
             class="truncate"
             style="color:#0050bb;display:inline-block;max-width:140px;vertical-align:bottom;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"
-          >{{ displayTitle }}</span>
+          >{{ DEFAULT_TITLE }}</span>
+        </div>
+
+        <!-- Uploaded track entry — visible once a file is loaded -->
+        <div
+          v-if="customTrackName"
+          class="px-2 py-1 flex-shrink-0 border-b border-gray-200 cursor-pointer"
+          style="font-size:11px;background:#f4f4f4;"
+          @click="playCustom"
+        >
+          <span :style="{ color: (!isDefaultActive && isPlaying) ? '#0050bb' : '#555', marginRight: '3px' }">{{ !isDefaultActive && isPlaying ? '▶' : '◼' }}</span>
+          <span
+            class="truncate"
+            style="color:#0050bb;display:inline-block;max-width:140px;vertical-align:bottom;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"
+          >{{ customTrackName }}</span>
         </div>
 
         <!-- Time display -->
@@ -141,12 +156,14 @@ const isPlaying       = ref(false)
 const currentTime     = ref(0)
 const duration        = ref(0)
 const customTrackName = ref(null)
+const isDefaultActive = ref(true)
 
 const DEFAULT_TITLE  = 'Need You'
 const DEFAULT_ARTIST = 'Lost Sky'
+const DEFAULT_SRC    = '/sounds/Lost Sky - Need You [NCS Release].mp3'
 
-const displayTitle  = computed(() => customTrackName.value ?? DEFAULT_TITLE)
-const displayArtist = computed(() => customTrackName.value ? '' : DEFAULT_ARTIST)
+const displayTitle  = computed(() => isDefaultActive.value ? DEFAULT_TITLE : (customTrackName.value ?? DEFAULT_TITLE))
+const displayArtist = computed(() => isDefaultActive.value ? DEFAULT_ARTIST : '')
 
 // Butterchurn (MilkDrop) visualization — random preset cycler
 const PRESET_HOLD_SECS  = 15       // auto-advance interval
@@ -226,6 +243,7 @@ function setupVisualizer() {
   if (!canvas || !videoEl) return
 
   audioCtx = new (window.AudioContext || window.webkitAudioContext)()
+  audioCtx.resume()
 
   const dpr = window.devicePixelRatio || 1
   const W   = canvas.parentElement.clientWidth
@@ -280,20 +298,35 @@ function handleDrop(e) {
   if (file?.type.startsWith('audio/')) loadFile(file)
 }
 
+function playSrc(src) {
+  const wmp = wmpRef.value
+  if (!wmp) return
+  setupVisualizer()
+  const onCanPlay = () => {
+    wmp.removeEventListener('canplay', onCanPlay)
+    wmp.play()
+  }
+  wmp.addEventListener('canplay', onCanPlay)
+  wmp.setAttribute('src', src)
+}
+
 function loadFile(file) {
   if (currentBlobUrl) URL.revokeObjectURL(currentBlobUrl)
   currentBlobUrl = URL.createObjectURL(file)
   customTrackName.value = file.name.replace(/\.[^/.]+$/, '').replace(/[_-]/g, ' ')
-  const wmp = wmpRef.value
-  if (wmp) {
-    // Wait for canplay before playing to handle src load timing
-    const onCanPlay = () => {
-      wmp.removeEventListener('canplay', onCanPlay)
-      wmp.play()
-    }
-    wmp.addEventListener('canplay', onCanPlay)
-    wmp.setAttribute('src', currentBlobUrl)
-  }
+  isDefaultActive.value = false
+  playSrc(currentBlobUrl)
+}
+
+function playDefault() {
+  isDefaultActive.value = true
+  playSrc(DEFAULT_SRC)
+}
+
+function playCustom() {
+  if (!currentBlobUrl) return
+  isDefaultActive.value = false
+  playSrc(currentBlobUrl)
 }
 
 function formatTime(s) {
@@ -314,7 +347,7 @@ onMounted(() => {
   const wmp = wmpRef.value
   if (wmp) {
     // Set the default track
-    wmp.setAttribute('src', '/sounds/Lost Sky - Need You [NCS Release].mp3')
+    wmp.setAttribute('src', DEFAULT_SRC)
 
     // Remove the fullscreen button — it would fullscreen only the tray, not the canvas
     const fsBtn = wmp.shadowRoot?.querySelector('.fullscreen')
