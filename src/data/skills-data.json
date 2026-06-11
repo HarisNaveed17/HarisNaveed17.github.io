@@ -14,7 +14,7 @@
     },
     {
       "name": "MLOps & Infrastructure",
-      "skills": ["Docker", "Kubernetes", "Git", "Linux", "ChromaDB", "Vector Databases"]
+      "skills": ["Docker", "Kubernetes", "Git", "Linux", "Vector Databases"]
     },
     {
       "name": "Development Tools",
