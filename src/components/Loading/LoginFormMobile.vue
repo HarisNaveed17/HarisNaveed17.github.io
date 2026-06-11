@@ -11,12 +11,10 @@ const handleLogin = () => {
 </script>
 
 <template>
-  <div @click="handleLogin">
-    <router-link to="/office" class="cursor-pointer outline-none">
-      <div class="flex flex-col items-center justify-center text-white gap-4">
-        <ProfilePicture class="w-28 h-28 stroke-yellow-2" />
-        <h2 class="text-lg">Haris Naveed</h2>
-      </div>
-    </router-link>
+  <div @click="handleLogin" class="cursor-pointer outline-none">
+    <div class="flex flex-col items-center justify-center text-white gap-4">
+      <ProfilePicture class="w-28 h-28 stroke-yellow-2" />
+      <h2 class="text-lg">Haris Naveed</h2>
+    </div>
   </div>
 </template>
