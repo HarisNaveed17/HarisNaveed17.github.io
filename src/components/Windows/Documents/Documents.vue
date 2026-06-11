@@ -40,6 +40,7 @@ import { useGoBackStore } from '@/stores/goBackStore'
 import WindowLeftMenu from '@/components/Windows/WindowLeftMenu.vue'
 import About from './About.vue'
 import Legal from './Legal.vue'
+import AboutWebsite from './AboutWebsite.vue'
 
 // Stores management
 const goBackStore = useGoBackStore()
@@ -66,12 +67,22 @@ const pages = ref([
     isFocused: false,
     isActive: false,
     component: 'Legal'
+  },
+  {
+    name: 'windows.documents.aboutWebsite.title',
+    type: 'common.textDocument',
+    icon: 'txt-icon.webp',
+    size: '2KB',
+    isFocused: false,
+    isActive: false,
+    component: 'AboutWebsite'
   }
 ])
 
 const componentMap = {
   About,
-  Legal
+  Legal,
+  AboutWebsite
 }
 
 const currentComponent = computed(() => {
