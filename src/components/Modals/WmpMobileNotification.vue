@@ -29,13 +29,16 @@
 import { ref } from 'vue'
 
 const visible = ref(false)
+let autoTimer = null
 
 function show() {
   visible.value = true
+  autoTimer = setTimeout(dismiss, 15000)
 }
 
 function dismiss() {
   visible.value = false
+  clearTimeout(autoTimer)
 }
 
 defineExpose({ show })
