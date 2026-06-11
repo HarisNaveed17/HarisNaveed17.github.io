@@ -116,10 +116,10 @@ window.addEventListener('click', (e) => {
 </script>
 
 <template>
-  <div class="relative right-0 h-full flex">
+  <div class="relative right-0 h-full flex overflow-hidden">
     <WindowLeftMenu :leftMenuType="props.leftMenuType" />
     <!-- Content of project -->
-    <div v-if="goBackStore.currentActiveProject" class="w-full h-full bg-white overflow-auto overflow-x-hidden pb-8 md:pb-5">
+    <div v-if="goBackStore.currentActiveProject" class="flex-1 min-h-0 bg-white overflow-auto overflow-x-hidden pb-8 md:pb-5">
       <div class="m-2">
         <div class="w-full gap-4 mb-3">
           <h2 class="text-lg md:text-xl">{{ localizedTitle }}</h2>
@@ -174,7 +174,7 @@ window.addEventListener('click', (e) => {
       </div>
     </div>
     <!-- Content window Foreach categories and projects -->
-    <div v-else class="flex flex-col w-full h-full bg-white overflow-auto pt-0.5">
+    <div v-else class="flex flex-col flex-1 min-h-0 bg-white overflow-auto pt-0.5">
       <div v-for="category in categories" :key="category.name" class="relative group mb-3">
         <h1 class="text-xs font-semibold px-3">{{ getLocalizedCategoryName(category) }}</h1>
         <div class="absolute left-[-12px] top-5 w-80 h-px bg-gradient-to-r from-blue-300 to-white"></div>
