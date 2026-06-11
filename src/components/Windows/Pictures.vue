@@ -85,7 +85,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import WindowLeftMenu from '@/components/Windows/WindowLeftMenu.vue'
 import picturesData from '@/data/pictures-data.json'
 
@@ -100,6 +100,11 @@ const rotation = ref(0) // Define the rotation ref
 const pictureContainer = ref(null)
 const pictureElements = ref([])
 
+const onKeyDown = (e) => {
+  if (e.key === 'ArrowLeft') previousPicture()
+  else if (e.key === 'ArrowRight') nextPicture()
+}
+
 onMounted(() => {
   if (pictures && pictures.length > 0) {
     setTimeout(() => {
@@ -107,6 +112,11 @@ onMounted(() => {
       nextTick(() => scrollToCurrentPicture())
     }, 100)
   }
+  window.addEventListener('keydown', onKeyDown)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeyDown)
 })
 
 const setCurrentPicture = (picture) => {
