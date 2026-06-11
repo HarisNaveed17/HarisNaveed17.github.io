@@ -246,8 +246,10 @@ const router = createRouter({
 router.beforeEach((to) => {
   const connectionStore = useConnectionStore()
   const inTransition = connectionStore.status === 'restart' || connectionStore.status === 'disconnected'
-  if (isMobile() && to.name !== 'mobile' && !inTransition) {
-    return { name: 'mobile' }
+  if (isMobile() && !inTransition) {
+    const isConnected = connectionStore.status === 'connected'
+    if (!isConnected && to.name !== 'home') return { name: 'home' }
+    if (isConnected && to.name !== 'mobile') return { name: 'mobile' }
   }
 })
 
