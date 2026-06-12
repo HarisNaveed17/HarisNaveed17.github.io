@@ -81,7 +81,7 @@ const router = createRouter({
           },
           {
             name: 'twitter:image',
-            content: 'https://harisnaveed17.github.io/img/logo-portfolio-black.webp'
+            content: 'https://harisnaveed17.github.io/img/logo-masalafries-black.webp'
           },
           {
             name: 'twitter:image:alt',
@@ -110,7 +110,7 @@ const router = createRouter({
           },
           {
             property: 'og:image',
-            content: 'https://harisnaveed17.github.io/img/logo-portfolio-black.webp'
+            content: 'https://harisnaveed17.github.io/img/logo-masalafries-black.webp'
           },
           {
             property: 'og:image:alt',
@@ -194,7 +194,7 @@ const router = createRouter({
           },
           {
             name: 'twitter:image',
-            content: 'https://harisnaveed17.github.io/img/logo-portfolio-black.webp'
+            content: 'https://harisnaveed17.github.io/img/logo-masalafries-black.webp'
           },
           {
             name: 'twitter:image:alt',
@@ -223,7 +223,7 @@ const router = createRouter({
           },
           {
             name: 'og:image',
-            content: 'https://harisnaveed17.github.io/img/logo-portfolio-black.webp'
+            content: 'https://harisnaveed17.github.io/img/logo-masalafries-black.webp'
           },
           {
             name: 'og:image:alt',

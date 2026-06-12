@@ -7,7 +7,7 @@ import LoadingBar from './LoadingBar.vue'
   <ContentCenter class="bg-black">
     <template #center>
       <div class="md:w-4/12 w-64 ml-5">
-        <img src="/img/logo-portfolio-white.webp" :alt="$t('alt.logoStart')" />
+        <img src="/img/logo-masalafries-white.webp" :alt="$t('alt.logoStart')" />
       </div>
     </template>
 

@@ -11,7 +11,7 @@
           <div>
             <div class="flex justify-end w-full">
               <div class="w-2/3">
-                <img src="/img/logo-portfolio-white.webp" :alt="$t('alt.logoLogin')" class="mb-3" />
+                <img src="/img/logo-masalafries-white.webp" :alt="$t('alt.logoLogin')" class="mb-3" />
               </div>
             </div>
             <div class="w-full flex justify-end">
@@ -30,7 +30,7 @@
       <!-- Mobile layout: stacked vertical, portfolio logo on top, square login below -->
       <div class="md:hidden flex flex-col items-center justify-center w-full gap-6 px-6">
         <div class="w-3/5 max-w-[260px]">
-          <img src="/img/logo-portfolio-white.webp" :alt="$t('alt.logoLogin')" />
+          <img src="/img/logo-masalafries-white.webp" :alt="$t('alt.logoLogin')" />
         </div>
         <h2 class="text-white text-sm text-center opacity-80 px-4">
           {{ $t('message.toBegin') }}
