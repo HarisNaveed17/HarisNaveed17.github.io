@@ -107,6 +107,60 @@
       "date": "May 13, 2025",
       "src": "/img/photos/niagara.jpg",
       "alt": "Niagara Falls viewed from the American side"
+    },
+    {
+      "id": 13,
+      "title": "Nicest Scottish Castle I saw",
+      "location": "Eilean Donan Castle, Scottish Highlands",
+      "description": "Most Highland Scottish Castles are small affairs; This one is grand.",
+      "date": "July 16, 2026",
+      "src": "/img/photos/eilean-dolean.jpg",
+      "alt": "Eilean Donan Castle on its tidal island in the Scottish Highlands"
+    },
+    {
+      "id": 14,
+      "title": "Fairy Pools",
+      "location": "Fairy Pools, Isle of Skye, Scotland",
+      "description": "I plunged my face in the pools several times here",
+      "date": "July 17, 2026",
+      "src": "/img/photos/fairies.jpg",
+      "alt": "Clear blue pools and waterfalls at the Fairy Pools on the Isle of Skye"
+    },
+    {
+      "id": 15,
+      "title": "The Old Man of Storr",
+      "location": "Isle of Skye, Scotland",
+      "description": "Lovely hike with a speedrun down to catch the country bus afterwards.",
+      "date": "July 17, 2026",
+      "src": "/img/photos/storr.jpg",
+      "alt": "The rocky pinnacles of the Storr on the Isle of Skye"
+    },
+    {
+      "id": 16,
+      "title": "Straight out of a picture book",
+      "location": "Glencoe, Scottish Highlands",
+      "description": "The last stop on our tour, and the best one.",
+      "date": "July 18, 2026",
+      "src": "/img/photos/glencoe.jpg",
+      "alt": "Mountains and valley landscape in Glencoe, Scottish Highlands"
+    },
+    {
+      "id": 17,
+      "title": "Favorite Castle I've seen (so far)",
+      "location": "Edinburgh Castle, Scotland",
+      "description": "Would have hated to be the soldier asked to siege this intimidating fortress.",
+      "date": "July 19, 2026",
+      "src": "/img/photos/edinburgh-castle.jpg",
+      "alt": "Edinburgh Castle on Castle Rock above the city of Edinburgh"
+    },
+    {
+      "id": 18,
+      "title": "",
+      "location": "Stirling Castle, Scotland",
+      "description": "The sculptures on the walls kept me busy for a full hour",
+      "date": "July 20, 2026",
+      "src": "/img/photos/stirling-castle.jpg",
+      "alt": "Stirling Castle on its hilltop in Stirling, Scotland"
     }
   ]
 }
