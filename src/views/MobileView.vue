@@ -236,4 +236,7 @@ provide('minimizeWindow', minimizeWindow)
 windowsStore.openWindowIds.forEach((windowId) => {
   openWindow(windowId)
 })
+
+// Always show About Me on load (no-op if it was restored above)
+openWindow('about')
 </script>
